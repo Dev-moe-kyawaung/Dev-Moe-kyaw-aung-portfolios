@@ -2606,23 +2606,6 @@
       anonymize_ip: true,
       send_page_view: false
     });
-  
-
-<script src="assets/js/main.js"></script>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('./sw.js')
-        .then(function () {
-          console.log('Service worker registered');
-        })
-        .catch(function (error) {
-          console.warn('Service worker failed:', error);
-        });
-    });
-  }
-</script>
-  
+  </script>
 </body>
 </html>
