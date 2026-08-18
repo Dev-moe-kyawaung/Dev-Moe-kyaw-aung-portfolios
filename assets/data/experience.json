@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "total": 8,
+    "yearsExperience": 12,
+    "lastUpdated": "2026-08-18"
+  },
+  "summary": {
+    "totalYears": 12,
+    "totalCompanies": 8,
+    "totalProjects": 156,
+    "technologies": 45,
+    "certifications": 82,
+    "leadership": "5+ years leading teams"
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Freelance / Self-Employed",
+      "role": "Senior Android Developer & Technical Founder",
+      "location": "Remote (Myanmar 🇲🇲 ↔ Thailand 🇹🇭)",
+      "type": "Self-Employed",
+      "startDate": "2020-01-01",
+      "endDate": null,
+      "current": true,
+      "duration": "6 years 8 months",
+      "description": "Building and scaling multiple SaaS products and mobile applications. Specializing in Android development, startup MVPs, and technical consulting.",
+      "responsibilities": [
+        "Founded and scaled 12+ startup ventures with combined \$255K MRR",
+        "Built 40+ production applications across Android, iOS, and Web",
+        "Consulted for 25+ clients on mobile architecture and technical strategy",
+        "Mentored 15+ junior developers through open source and community",
+        "Achieved 82+ technical certifications across 9 domains"
+      ],
+      "achievements": [
+        "Generated \$4.1M+ total revenue across all ventures",
+        "Built POS Ultimate to \$85K MRR with 450 business customers",
+        "Grew Casino App to 125K users and \$125K MRR",
+        "Open-sourced 43 GitHub repositories with 8,945+ stars",
+        "Maintained 99.97% uptime across all production systems"
+      ],
+      "technologies": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android SDK",
+        "Firebase",
+        "Node.js",
+        "React",
+        "Vue.js",
+        "PostgreSQL",
+        "MongoDB",
+        "AWS",
+        "Docker",
+        "Kubernetes"
+      ],
+      "metrics": {
+        "projectsDelivered": 156,
+        "clientsServed": 25,
+        "revenue": "\$4,104,000",
+        "githubStars": 8945,
+        "githubRepos": 43
+      },
+      "logo": "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_3_zqrhhr.webp"
+    },
+    {
+      "id": 2,
+      "company": "Tech Startup (Bangkok)",
+      "role": "Lead Android Developer",
+      "location": "Bangkok, Thailand 🇹🇭",
+      "type": "Full-Time",
+      "startDate": "2018-06-01",
+      "endDate": "2019-12-31",
+      "current": false,
+      "duration": "1 year 7 months",
+      "description": "Led Android development for fintech startup. Built payment processing app from ground up, integrated with multiple payment gateways and banking APIs.",
+      "responsibilities": [
+        "Led team of 4 Android developers",
+        "Architected multi-module Android application with Clean Architecture",
+        "Integrated Stripe, PayPal, and local Thai payment gateways",
+        "Implemented biometric authentication and encryption",
+        "Conducted code reviews and technical interviews"
+      ],
+      "achievements": [
+        "Launched app to 50K+ users in first 6 months",
+        "Achieved 4.6-star rating on Google Play Store",
+        "Reduced app crash rate to 0.3% (industry avg 2.5%)",
+        "Improved app startup time by 60% (3.2s → 1.3s)",
+        "Passed PCI-DSS security audit on first attempt"
+      ],
+      "technologies": [
+        "Kotlin",
+        "Android SDK",
+        "RxJava",
+        "Dagger",
+        "MVVM",
+        "Clean Architecture",
+        "Stripe API",
+        "Firebase",
+        "Git"
+      ],
+      "metrics": {
+        "appUsers": 50000,
+        "playStoreRating": 4.6,
+        "crashRate": 0.3,
+        "startupTime": "1.3s"
+      },
+      "logo": null
+    },
+    {
+      "id": 3,
+      "company": "Mobile Development Agency",
+      "role": "Senior Android Developer",
+      "location": "Yangon, Myanmar 🇲🇲",
+      "type": "Full-Time",
+      "startDate": "2016-03-01",
+      "endDate": "2018-05-31",
+      "current": false,
+      "duration": "2 years 3 months",
+      "description": "Developed custom Android applications for enterprise clients across e-commerce, healthcare, and logistics sectors.",
+      "responsibilities": [
+        "Delivered 18 client projects on time and within budget",
+        "Built e-commerce app with 100K+ MAU",
+        "Developed healthcare app for hospital management",
+        "Created logistics tracking system for delivery company",
+        "Mentored 3 junior developers"
+      ],
+      "achievements": [
+        "100% on-time delivery rate across 18 projects",
+        "E-commerce app generated \$2M+ annual revenue for client",
+        "Healthcare app reduced patient wait times by 40%",
+        "Logistics app improved delivery efficiency by 35%",
+        "Received 'Best Developer' award 2017"
+      ],
+      "technologies": [
+        "Java",
+        "Android SDK",
+        "SQLite",
+        "Retrofit",
+        "Glide",
+        "MVP",
+        "REST APIs",
+        "Google Maps API"
+      ],
+      "metrics": {
+        "projectsDelivered": 18,
+        "onTimeDelivery": 100,
+        "clientSatisfaction": 4.8
+      },
+      "logo": null
+    },
+    {
+      "id": 4,
+      "company": "Software Company",
+      "role": "Android Developer",
+      "location": "Yangon, Myanmar 🇲🇲",
+      "type": "Full-Time",
+      "startDate": "2014-06-01",
+      "endDate": "2016-02-28",
+      "current": false,
+      "duration": "1 year 9 months",
+      "description": "Developed Android applications for local businesses and government organizations.",
+      "responsibilities": [
+        "Built 12 Android applications for various clients",
+        "Integrated with government databases and APIs",
+        "Developed custom UI/UX for each client",
+        "Provided ongoing maintenance and support"
+      ],
+      "achievements": [
+        "First Android app for Myanmar government department",
+        "Tourism app featured in Google Play Store",
+        "Built team's first multi-module Android project",
+        "Achieved 4.5+ average rating across all apps"
+      ],
+      "technologies": [
+        "Java",
+        "Android SDK",
+        "SQLite",
+        "AsyncTask",
+        "Fragments",
+        "REST APIs"
+      ],
+      "metrics": {
+        "appsDelivered": 12,
+        "avgRating": 4.5
+      },
+      "logo": null
+    },
+    {
+      "id": 5,
+      "company": "IT Solutions Provider",
+      "role": "Junior Android Developer",
+      "location": "Yangon, Myanmar 🇲🇲",
+      "type": "Full-Time",
+      "startDate": "2014-01-01",
+      "endDate": "2014-05-31",
+      "current": false,
+      "duration": "5 months",
+      "description": "First professional role as Android developer. Learned Android development fundamentals and best practices.",
+      "responsibilities": [
+        "Built simple Android applications for local businesses",
+        "Fixed bugs and implemented features in existing apps",
+        "Learned Android SDK, Java, and mobile development",
+        "Participated in code reviews and team meetings"
+      ],
+      "achievements": [
+        "Delivered first production Android app",
+        "Learned MVVM architecture pattern",
+        "Completed 3 client projects",
+        "Promoted to mid-level developer in 5 months"
+      ],
+      "technologies": [
+        "Java",
+        "Android SDK",
+        "Eclipse",
+        "Git",
+        "SQLite"
+      ],
+      "metrics": {
+        "appsDelivered": 3,
+        "bugsFixed": 150
+      },
+      "logo": null
+    },
+    {
+      "id": 6,
+      "company": "Freelance",
+      "role": "Web Developer",
+      "location": "Remote",
+      "type": "Freelance",
+      "startDate": "2012-06-01",
+      "endDate": "2013-12-31",
+      "current": false,
+      "duration": "1 year 7 months",
+      "description": "Started career as web developer, building websites and web applications for small businesses.",
+      "responsibilities": [
+        "Built 25+ websites using HTML, CSS, JavaScript, PHP",
+        "Developed e-commerce sites with payment integration",
+        "Created content management systems for clients",
+        "Provided hosting and maintenance services"
+      ],
+      "achievements": [
+        "Earned first \$1,000 from freelance work",
+        "Built first e-commerce site with online payments",
+        "Developed repeat client base (15+ clients)",
+        "Transitioned to mobile development from web"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "WordPress",
+        "jQuery"
+      ],
+      "metrics": {
+        "websitesDelivered": 25,
+        "revenue": "\$12,000"
+      },
+      "logo": null
+    },
+    {
+      "id": 7,
+      "company": "University IT Department",
+      "role": "IT Support / Web Developer",
+      "location": "Yangon, Myanmar 🇲🇲",
+      "type": "Part-Time",
+      "startDate": "2011-01-01",
+      "endDate": "2012-05-31",
+      "current": false,
+      "duration": "1 year 5 months",
+      "description": "Part-time role while studying. Provided IT support and built university website.",
+      "responsibilities": [
+        "Provided IT support for faculty and students",
+        "Maintained computer labs and network infrastructure",
+        "Built university department website",
+        "Trained staff on basic computer skills"
+      ],
+      "achievements": [
+        "Built first professional website (university department)",
+        "Reduced IT support ticket resolution time by 50%",
+        "Trained 50+ staff members on computer basics",
+        "Earned first technical certification (CompTIA A+)"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Windows",
+        "Linux",
+        "Networking"
+      ],
+      "metrics": {
+        "ticketsResolved": 500,
+        "websitesDelivered": 1
+      },
+      "logo": null
+    },
+    {
+      "id": 8,
+      "company": "Self-Taught",
+      "role": "Student / Learner",
+      "location": "Tachileik, Myanmar 🇲🇲",
+      "type": "Self-Education",
+      "startDate": "2010-01-01",
+      "endDate": "2011-12-31",
+      "current": false,
+      "duration": "2 years",
+      "description": "Self-taught programming and web development through online resources, books, and practice projects.",
+      "responsibilities": [
+        "Learned HTML, CSS, JavaScript fundamentals",
+        "Built 50+ practice projects and tutorials",
+        "Completed online courses (Codecademy, freeCodeCamp)",
+        "Participated in online developer communities"
+      ],
+      "achievements": [
+        "Built first website at age 16",
+        "Completed 100+ hours of coding tutorials",
+        "Built portfolio of 50+ practice projects",
+        "Landed first freelance client through portfolio"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "metrics": {
+        "projectsBuilt": 50,
+        "coursesCompleted": 12,
+        "hoursLearned": 1000
+      },
+      "logo": null
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Computer University, Yangon",
+      "degree": "Bachelor of Computer Science",
+      "field": "Computer Science & Engineering",
+      "location": "Yangon, Myanmar 🇲🇲",
+      "startDate": "2010-09-01",
+      "endDate": "2014-06-30",
+      "graduationYear": 2014,
+      "gpa": "3.8/4.0",
+      "honors": "Dean's List (6 semesters)",
+      "activities": [
+        "Programming Club President",
+        "Hackathon Winner (2013)",
+        "Teaching Assistant (Data Structures)"
+      ],
+      "relevantCourses": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Database Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "Operating Systems"
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "Google Developers Launchpad",
+      "degree": "Android Developer Certification",
+      "field": "Mobile Development",
+      "location": "Online",
+      "startDate": "2017-01-01",
+      "endDate": "2017-06-30",
+      "graduationYear": 2017,
+      "honors": "Top 10% of cohort",
+      "description": "Intensive 6-month Android development bootcamp covering advanced topics."
+    }
+  ],
+  "skills": {
+    "languages": [
+      {
+        "name": "Kotlin",
+        "level": "Expert",
+        "years": 6,
+        "proficiency": 95
+      },
+      {
+        "name": "Java",
+        "level": "Expert",
+        "years": 8,
+        "proficiency": 90
+      },
+      {
+        "name": "JavaScript",
+        "level": "Advanced",
+        "years": 7,
+        "proficiency": 88
+      },
+      {
+        "name": "TypeScript",
+        "level": "Advanced",
+        "years": 4,
+        "proficiency": 85
+      },
+      {
+        "name": "Python",
+        "level": "Advanced",
+        "years": 5,
+        "proficiency": 82
+      },
+      {
+        "name": "PHP",
+        "level": "Intermediate",
+        "years": 6,
+        "proficiency": 70
+      },
+      {
+        "name": "SQL",
+        "level": "Advanced",
+        "years": 7,
+        "proficiency": 85
+      },
+      {
+        "name": "Dart",
+        "level": "Intermediate",
+        "years": 3,
+        "proficiency": 72
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "Android SDK",
+        "level": "Expert",
+        "years": 8,
+        "proficiency": 95
+      },
+      {
+        "name": "Jetpack Compose",
+        "level": "Expert",
+        "years": 4,
+        "proficiency": 92
+      },
+      {
+        "name": "React",
+        "level": "Advanced",
+        "years": 5,
+        "proficiency": 85
+      },
+      {
+        "name": "Vue.js",
+        "level": "Advanced",
+        "years": 4,
+        "proficiency": 83
+      },
+      {
+        "name": "Next.js",
+        "level": "Advanced",
+        "years": 3,
+        "proficiency": 80
+      },
+      {
+        "name": "Node.js",
+        "level": "Advanced",
+        "years": 5,
+        "proficiency": 82
+      },
+      {
+        "name": "Flutter",
+        "level": "Intermediate",
+        "years": 3,
+        "proficiency": 75
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "level": "Expert",
+        "years": 8,
+        "proficiency": 92
+      },
+      {
+        "name": "Firebase",
+        "level": "Expert",
+        "years": 6,
+        "proficiency": 90
+      },
+      {
+        "name": "Docker",
+        "level": "Advanced",
+        "years": 4,
+        "proficiency": 80
+      },
+      {
+        "name": "AWS",
+        "level": "Advanced",
+        "years": 4,
+        "proficiency": 78
+      },
+      {
+        "name": "Kubernetes",
+        "level": "Intermediate",
+        "years": 3,
+        "proficiency": 70
+      },
+      {
+        "name": "Figma",
+        "level": "Advanced",
+        "years": 4,
+        "proficiency": 82
+      }
+    ]
+  }
+}
