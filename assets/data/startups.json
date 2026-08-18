@@ -1,0 +1,862 @@
+{
+  "meta": {
+    "total": 12,
+    "lastUpdated": "2026-08-18",
+    "status": {
+      "active": 5,
+      "pivoted": 4,
+      "shutDown": 3
+    }
+  },
+  "startups": [
+    {
+      "id": "moekyaw-translator",
+      "name": "MoekyawTranslator",
+      "tagline": "AI-Powered Translation App",
+      "description": "On-device AI translation app supporting Myanmar, Thai, English with offline support.",
+      "status": "active",
+      "founded": "2026-01-15",
+      "stage": "MVP",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "advisors": 2
+      },
+      "product": {
+        "category": "AI/ML",
+        "platform": ["Android", "iOS", "Web"],
+        "tech": ["Kotlin", "Swift", "TFLite", "Claude API"],
+        "users": 8500,
+        "revenue": "\$0",
+        "model": "Freemium"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Pre-seed",
+        "investors": []
+      },
+      "metrics": {
+        "downloads": 8500,
+        "dailyActiveUsers": 2800,
+        "retention7Day": 62,
+        "rating": 4.6
+      },
+      "timeline": [
+        {
+          "date": "2026-01-15",
+          "event": "Project Started",
+          "description": "Initial concept and research"
+        },
+        {
+          "date": "2026-02-20",
+          "event": "MVP Launch",
+          "description": "Android app with basic translation"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "8.5K users, iOS in development"
+        }
+      ],
+      "learnings": [
+        "On-device ML crucial for Myanmar market with poor connectivity",
+        "Claude API provides better translation quality than Google Translate for Myanmar",
+        "Offline-first design essential for target market"
+      ],
+      "nextSteps": [
+        "iOS app launch (Q4 2026)",
+        "Premium features (offline packs, business translation)",
+        "Partnership with Myanmar tourism board"
+      ]
+    },
+    {
+      "id": "pos-ultimate",
+      "name": "POS Ultimate",
+      "tagline": "Enterprise Point of Sale System",
+      "description": "Multi-location POS system with inventory management, analytics, and payment processing.",
+      "status": "active",
+      "founded": "2025-06-01",
+      "stage": "Growth",
+      "team": {
+        "founders": 1,
+        "employees": 3,
+        "contractors": 5
+      },
+      "product": {
+        "category": "SaaS",
+        "platform": ["Web", "Android", "iOS"],
+        "tech": ["React", "Node.js", "PostgreSQL", "Stripe"],
+        "users": 450,
+        "revenue": "\$85,000 MRR",
+        "model": "Subscription"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "businesses": 450,
+        "transactions": 2500000,
+        "mrr": 85000,
+        "arr": 1020000,
+        "churn": 3.2,
+        "ltv": 12500,
+        "cac": 450
+      },
+      "timeline": [
+        {
+          "date": "2025-06-01",
+          "event": "Founded",
+          "description": "Started building MVP"
+        },
+        {
+          "date": "2025-08-15",
+          "event": "MVP Launch",
+          "description": "First 12 beta customers"
+        },
+        {
+          "date": "2025-11-01",
+          "event": "Public Launch",
+          "description": "85 paying customers"
+        },
+        {
+          "date": "2026-02-01",
+          "event": "v2.0 Release",
+          "description": "Multi-location support, 245 customers"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "450 customers, \$85K MRR, profitable"
+        }
+      ],
+      "learnings": [
+        "Offline-first critical for POS systems",
+        "Multi-tenant architecture essential for scalability",
+        "Customer support is key differentiator",
+        "Word-of-mouth drives 60% of new customers"
+      ],
+      "nextSteps": [
+        "Expand to Thailand market",
+        "Add payment processing (own gateway)",
+        "Hire first sales person",
+        "Reach \$150K MRR by end of 2026"
+      ]
+    },
+    {
+      "id": "social-dashboard",
+      "name": "Social Dashboard",
+      "tagline": "AI-Powered Social Media Analytics",
+      "description": "Unified dashboard for managing multiple social media accounts with AI insights.",
+      "status": "active",
+      "founded": "2026-01-15",
+      "stage": "Growth",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 2
+      },
+      "product": {
+        "category": "SaaS",
+        "platform": ["Web"],
+        "tech": ["Vue 3", "Node.js", "MongoDB", "Socket.io"],
+        "users": 15000,
+        "revenue": "\$12,000 MRR",
+        "model": "Freemium"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "users": 15000,
+        "dailyActiveUsers": 3200,
+        "mrr": 12000,
+        "growth": "+15% MoM",
+        "churn": 5.8,
+        "nps": 72
+      },
+      "timeline": [
+        {
+          "date": "2026-01-15",
+          "event": "Founded",
+          "description": "Started building MVP"
+        },
+        {
+          "date": "2026-02-01",
+          "event": "MVP Launch",
+          "description": "250 beta users"
+        },
+        {
+          "date": "2026-03-15",
+          "event": "Public Launch",
+          "description": "2,500 users, \$4.5K MRR"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "15K users, \$12K MRR"
+        }
+      ],
+      "learnings": [
+        "Instagram API changes broke app twice",
+        "AI insights are key differentiator",
+        "Freemium model drives rapid growth",
+        "Content creators are ideal customers"
+      ],
+      "nextSteps": [
+        "TikTok integration",
+        "Mobile app (iOS/Android)",
+        "Agency features (white-label)",
+        "Reach \$50K MRR by Q1 2027"
+      ]
+    },
+    {
+      "id": "casino-app",
+      "name": "Casino Royale",
+      "tagline": "Social Casino Games",
+      "description": "Multiplayer social casino games with virtual currency and tournaments.",
+      "status": "active",
+      "founded": "2025-07-01",
+      "stage": "Growth",
+      "team": {
+        "founders": 1,
+        "employees": 2,
+        "contractors": 4
+      },
+      "product": {
+        "category": "Gaming",
+        "platform": ["Web", "Android", "iOS"],
+        "tech": ["React", "Node.js", "Socket.io", "MongoDB"],
+        "users": 125000,
+        "revenue": "\$125,000 MRR",
+        "model": "In-App Purchases"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "users": 125000,
+        "dailyActiveUsers": 45000,
+        "mrr": 125000,
+        "arpu": 28,
+        "arppu": 95,
+        "retention30Day": 52,
+        "conversionRate": 3.8
+      },
+      "timeline": [
+        {
+          "date": "2025-07-01",
+          "event": "Founded",
+          "description": "Started with Snake game"
+        },
+        {
+          "date": "2025-09-15",
+          "event": "MVP Launch",
+          "description": "First casino game (slots)"
+        },
+        {
+          "date": "2025-11-20",
+          "event": "Public Launch",
+          "description": "Multiple games, tournaments"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "125K users, \$125K MRR"
+        }
+      ],
+      "learnings": [
+        "Virtual currency avoids gambling regulations",
+        "Tournaments drive engagement and revenue",
+        "Daily bonuses critical for retention",
+        "Social features increase LTV by 3x"
+      ],
+      "nextSteps": [
+        "New games (poker, blackjack)",
+        "VIP program",
+        "Influencer partnerships",
+        "Reach \$250K MRR by Q2 2027"
+      ]
+    },
+    {
+      "id": "job-portal",
+      "name": "Myanmar Jobs",
+      "tagline": "AI-Powered Job Board",
+      "description": "Job board with AI matching, resume builder, and interview prep for Myanmar market.",
+      "status": "active",
+      "founded": "2026-03-01",
+      "stage": "Early Growth",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 1
+      },
+      "product": {
+        "category": "Marketplace",
+        "platform": ["Web", "Mobile"],
+        "tech": ["Next.js", "PostgreSQL", "OpenAI API"],
+        "users": 35000,
+        "revenue": "\$18,000 MRR",
+        "model": "Freemium + Job Postings"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "jobSeekers": 35000,
+        "employers": 450,
+        "jobs": 12000,
+        "applications": 180000,
+        "hires": 4500,
+        "mrr": 18000,
+        "growth": "+25% MoM"
+      },
+      "timeline": [
+        {
+          "date": "2026-03-01",
+          "event": "Founded",
+          "description": "Started building platform"
+        },
+        {
+          "date": "2026-04-15",
+          "event": "MVP Launch",
+          "description": "Basic job board"
+        },
+        {
+          "date": "2026-06-01",
+          "event": "Public Launch",
+          "description": "AI matching, resume builder"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "35K users, \$18K MRR"
+        }
+      ],
+      "learnings": [
+        "AI matching 2x more effective than keyword search",
+        "Myanmar market needs mobile-first design",
+        "Employers willing to pay for quality candidates",
+        "Resume builder drives 40% of signups"
+      ],
+      "nextSteps": [
+        "Mobile app launch",
+        "Video interview feature",
+        "Salary insights",
+        "Expand to Thailand, Vietnam"
+      ]
+    },
+    {
+      "id": "thailand-travel",
+      "name": "Thailand Travel Guide",
+      "tagline": "Ultimate Thailand Travel Companion",
+      "description": "Comprehensive travel guide with destinations, itineraries, bookings, and local insights.",
+      "status": "pivoted",
+      "founded": "2026-02-15",
+      "stage": "Pivot",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Travel",
+        "platform": ["Web", "PWA"],
+        "tech": ["Next.js", "Strapi", "Mapbox"],
+        "users": 32000,
+        "revenue": "\$45,000 total",
+        "model": "Affiliate + Ads"
+      },
+      "pivot": {
+        "from": "B2C travel guide",
+        "to": "B2B travel API for agencies",
+        "date": "2026-07-15",
+        "reason": "B2C market too competitive, B2B opportunity identified"
+      },
+      "metrics": {
+        "users": 32000,
+        "bookings": 8500,
+        "revenue": 45000,
+        "avgCommission": 12
+      },
+      "timeline": [
+        {
+          "date": "2026-02-15",
+          "event": "Founded",
+          "description": "Started as B2C travel guide"
+        },
+        {
+          "date": "2026-04-01",
+          "event": "MVP Launch",
+          "description": "Destination guides, itineraries"
+        },
+        {
+          "date": "2026-05-15",
+          "event": "Public Launch",
+          "description": "Booking integration, maps"
+        },
+        {
+          "date": "2026-07-15",
+          "event": "Pivot",
+          "description": "Shifting to B2B API model"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "Building B2B API, 3 agency partners"
+        }
+      ],
+      "learnings": [
+        "B2C travel market dominated by Booking.com, TripAdvisor",
+        "Travel agencies need better API access to content",
+        "Affiliate revenue too low for sustainable business",
+        "B2B model has higher margins and stickier customers"
+      ],
+      "nextSteps": [
+        "Complete B2B API development",
+        "Sign 10+ travel agency partners",
+        "Sunset B2C app (maintain for SEO)",
+        "Target \$30K MRR from B2B by Q1 2027"
+      ]
+    },
+    {
+      "id": "lens-lite",
+      "name": "Lens Lite",
+      "tagline": "AI-Powered Image Editor",
+      "description": "Lightweight browser-based image editor with AI enhancements and 50+ filters.",
+      "status": "active",
+      "founded": "2025-09-15",
+      "stage": "Growth",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 1
+      },
+      "product": {
+        "category": "Productivity",
+        "platform": ["Web", "PWA"],
+        "tech": ["HTML5 Canvas", "WebGL", "TensorFlow.js"],
+        "users": 28000,
+        "revenue": "\$3,500 MRR",
+        "model": "Freemium"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "users": 28000,
+        "imagesEdited": 1800000,
+        "mrr": 3500,
+        "conversionRate": 4.2,
+        "avgSession": "15m"
+      },
+      "timeline": [
+        {
+          "date": "2025-09-15",
+          "event": "Founded",
+          "description": "Started as side project"
+        },
+        {
+          "date": "2025-11-01",
+          "event": "MVP Launch",
+          "description": "Basic filters, crop, resize"
+        },
+        {
+          "date": "2025-12-20",
+          "event": "Public Launch",
+          "description": "AI background removal, 50+ filters"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "28K users, \$3.5K MRR"
+        }
+      ],
+      "learnings": [
+        "WebGL essential for professional-grade editing",
+        "AI background removal is most-used feature",
+        "Freemium conversion rate 4.2% (above industry avg)",
+        "SEO drives 65% of traffic"
+      ],
+      "nextSteps": [
+        "Batch processing feature",
+        "Mobile app (React Native)",
+        "API for developers",
+        "Reach \$15K MRR by Q2 2027"
+      ]
+    },
+    {
+      "id": "daily-planner",
+      "name": "Daily Planner",
+      "tagline": "Productivity & Habit Tracking",
+      "description": "All-in-one productivity app with tasks, habits, time blocking, and goal tracking.",
+      "status": "active",
+      "founded": "2026-01-10",
+      "stage": "Growth",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Productivity",
+        "platform": ["Web", "Android", "iOS"],
+        "tech": ["React", "Firebase", "Redux"],
+        "users": 22000,
+        "revenue": "\$2,200 MRR",
+        "model": "Freemium"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "users": 22000,
+        "dailyActiveUsers": 11000,
+        "mrr": 2200,
+        "retention30Day": 58,
+        "tasksCompleted": 5600000
+      },
+      "timeline": [
+        {
+          "date": "2026-01-10",
+          "event": "Founded",
+          "description": "Started building MVP"
+        },
+        {
+          "date": "2026-02-10",
+          "event": "MVP Launch",
+          "description": "Task management only"
+        },
+        {
+          "date": "2026-03-20",
+          "event": "Public Launch",
+          "description": "Habits, time blocking, goals"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "22K users, \$2.2K MRR"
+        }
+      ],
+      "learnings": [
+        "Habit tracking drives highest retention",
+        "Cross-device sync is table stakes",
+        "Productivity analytics underutilized feature",
+        "Freemium conversion 3.8% (below target)"
+      ],
+      "nextSteps": [
+        "Improve onboarding flow",
+        "Add AI-powered insights",
+        "Team collaboration features",
+        "Reach \$10K MRR by Q3 2027"
+      ]
+    },
+    {
+      "id": "weather-app",
+      "name": "Weather Pro",
+      "tagline": "Beautiful Weather Forecasts",
+      "description": "Location-based weather app with 7-day forecasts, radar maps, and severe weather alerts.",
+      "status": "shutDown",
+      "founded": "2025-12-01",
+      "shutDown": "2026-06-01",
+      "stage": "Shut Down",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Utility",
+        "platform": ["Web", "PWA"],
+        "tech": ["Vue 3", "OpenWeatherMap API"],
+        "users": 18000,
+        "revenue": "\$0",
+        "model": "Free"
+      },
+      "shutDownReason": "Market too competitive, no clear monetization path",
+      "metrics": {
+        "users": 18000,
+        "dailyActiveUsers": 9500,
+        "apiCalls": 2500000,
+        "rating": 4.7
+      },
+      "timeline": [
+        {
+          "date": "2025-12-01",
+          "event": "Founded",
+          "description": "Started as learning project"
+        },
+        {
+          "date": "2025-12-20",
+          "event": "MVP Launch",
+          "description": "Basic weather forecasts"
+        },
+        {
+          "date": "2026-01-15",
+          "event": "Public Launch",
+          "description": "Radar maps, alerts"
+        },
+        {
+          "date": "2026-06-01",
+          "event": "Shut Down",
+          "description": "API costs too high, no revenue"
+        }
+      ],
+      "learnings": [
+        "Weather API costs scale with usage (\$500/month at peak)",
+        "No viable monetization (users expect free weather apps)",
+        "Market dominated by Weather Channel, AccuWeather",
+        "18K users but \$0 revenue = unsustainable"
+      ],
+      "assets": {
+        "code": "Open-sourced on GitHub",
+        "users": "Redirected to Weather.com",
+        "domain": "Expired"
+      }
+    },
+    {
+      "id": "snake-game",
+      "name": "Snake Game",
+      "tagline": "Classic Arcade Game",
+      "description": "Modern Snake game with power-ups, leaderboards, and tournaments.",
+      "status": "active",
+      "founded": "2025-09-01",
+      "stage": "Mature",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Gaming",
+        "platform": ["Web", "Android", "iOS"],
+        "tech": ["HTML5 Canvas", "Firebase"],
+        "users": 85000,
+        "revenue": "\$8,500 MRR",
+        "model": "Ads + IAP"
+      },
+      "funding": {
+        "raised": 0,
+        "stage": "Bootstrapped",
+        "investors": [],
+        "profitable": true
+      },
+      "metrics": {
+        "users": 85000,
+        "dailyActiveUsers": 28000,
+        "mrr": 8500,
+        "gamesPlayed": 5600000,
+        "avgSession": "8m 45s"
+      },
+      "timeline": [
+        {
+          "date": "2025-09-01",
+          "event": "Founded",
+          "description": "Started as weekend project"
+        },
+        {
+          "date": "2025-09-20",
+          "event": "MVP Launch",
+          "description": "Basic Snake game"
+        },
+        {
+          "date": "2025-10-15",
+          "event": "Public Launch",
+          "description": "Leaderboards, power-ups"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "85K users, \$8.5K MRR"
+        }
+      ],
+      "learnings": [
+        "Simple games can generate meaningful revenue",
+        "Leaderboards drive repeat engagement",
+        "Ad revenue \$0.50 per DAU per month",
+        "Low maintenance (95% automated)"
+      ],
+      "nextSteps": [
+        "Maintain and optimize",
+        "Add seasonal events",
+        "Consider selling asset",
+        "Target \$10K MRR steady state"
+      ]
+    },
+    {
+      "id": "video-player",
+      "name": "Video Player Pro",
+      "tagline": "Advanced HTML5 Video Player",
+      "description": "Custom video player with playlists, subtitles, speed control, and analytics.",
+      "status": "pivoted",
+      "founded": "2025-11-20",
+      "stage": "Pivot",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Media",
+        "platform": ["Web"],
+        "tech": ["HTML5", "JavaScript", "Cloudinary"],
+        "users": 12000,
+        "revenue": "\$0",
+        "model": "Open Source"
+      },
+      "pivot": {
+        "from": "B2C video player app",
+        "to": "B2B video infrastructure",
+        "date": "2026-05-01",
+        "reason": "B2C market saturated, B2B opportunity in video hosting"
+      },
+      "metrics": {
+        "users": 12000,
+        "videoPlays": 450000,
+        "githubStars": 312,
+        "completionRate": 72
+      },
+      "timeline": [
+        {
+          "date": "2025-11-20",
+          "event": "Founded",
+          "description": "Started building player"
+        },
+        {
+          "date": "2025-12-10",
+          "event": "MVP Launch",
+          "description": "Basic video player"
+        },
+        {
+          "date": "2026-01-05",
+          "event": "Public Launch",
+          "description": "Playlists, subtitles, analytics"
+        },
+        {
+          "date": "2026-05-01",
+          "event": "Pivot",
+          "description": "Shifting to B2B video hosting"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "Building video hosting API"
+        }
+      ],
+      "learnings": [
+        "Video.js, Plyr dominate B2C player market",
+        "Open source drives adoption but not revenue",
+        "Video hosting/encoding is bigger opportunity",
+        "312 GitHub stars validates technical quality"
+      ],
+      "nextSteps": [
+        "Complete video hosting API",
+        "Target content creators, small businesses",
+        "Compete with Cloudinary, Mux",
+        "Target \$20K MRR by Q2 2027"
+      ]
+    },
+    {
+      "id": "game-collection",
+      "name": "Game Collection",
+      "tagline": "Classic Arcade Games",
+      "description": "Collection of classic arcade games (Snake, Tetris, Pac-Man) rebuilt with modern web tech.",
+      "status": "pivoted",
+      "founded": "2025-10-01",
+      "stage": "Pivot",
+      "team": {
+        "founders": 1,
+        "employees": 0,
+        "contractors": 0
+      },
+      "product": {
+        "category": "Gaming",
+        "platform": ["Web"],
+        "tech": ["HTML5 Canvas", "JavaScript"],
+        "users": 25000,
+        "revenue": "\$1,200 MRR",
+        "model": "Ads"
+      },
+      "pivot": {
+        "from": "Standalone game collection",
+        "to": "White-label games for other apps",
+        "date": "2026-04-01",
+        "reason": "Higher margins licensing games to other developers"
+      },
+      "metrics": {
+        "users": 25000,
+        "gamesPlayed": 1200000,
+        "mrr": 1200,
+        "avgSession": "12m"
+      },
+      "timeline": [
+        {
+          "date": "2025-10-01",
+          "event": "Founded",
+          "description": "Started with Snake game"
+        },
+        {
+          "date": "2025-11-01",
+          "event": "MVP Launch",
+          "description": "3 games (Snake, Tetris, Pac-Man)"
+        },
+        {
+          "date": "2025-12-15",
+          "event": "Public Launch",
+          "description": "Leaderboards, achievements"
+        },
+        {
+          "date": "2026-04-01",
+          "event": "Pivot",
+          "description": "Licensing games to other apps"
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "description": "5 licensees, \$1.2K MRR"
+        }
+      ],
+      "learnings": [
+        "Ad revenue too low for sustainability (\$0.05 per user)",
+        "Licensing games 10x more profitable",
+        "Other developers want ready-to-integrate games",
+        "White-label model has higher margins"
+      ],
+      "nextSteps": [
+        "Add more games (10+ total)",
+        "Build SDK for easy integration",
+        "Target 20+ licensees",
+        "Reach \$10K MRR from licensing by Q1 2027"
+      ]
+    }
+  ],
+  "portfolio": {
+    "totalStartups": 12,
+    "active": 5,
+    "pivoted": 4,
+    "shutDown": 3,
+    "totalMRR": 255400,
+    "totalUsers": 485000,
+    "totalRevenue": "\$4,104,000",
+    "successRate": 75,
+    "avgTimeToMVP": "6 weeks",
+    "avgTimeToRevenue": "12 weeks"
+  }
+}
