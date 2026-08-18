@@ -1,0 +1,98 @@
+{
+  "name": "moekyawaung-portfolio",
+  "version": "1.0.0",
+  "description": "Senior Android Engineer & Technical Founder Portfolio - Moe Kyaw Aung",
+  "author": "Moe Kyaw Aung <moekyawaung@programmer.net>",
+  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "android-developer",
+    "kotlin",
+    "jetpack-compose",
+    "technical-founder",
+    "startup",
+    "mobile-engineer",
+    "firebase",
+    "clean-architecture",
+    "pwa"
+  ],
+  "homepage": "https://dev-moe-kyawaung.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-moe-kyawaung/moekyawaung-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dev-moe-kyawaung/moekyawaung-portfolio/issues"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:html": "live-server html-css-js-version --port=3000",
+    "dev:vue": "cd vue-version && npm run dev",
+    "dev:react": "cd react-version && npm run dev",
+    "dev:next": "cd nextjs-version && npm run dev",
+    "build": "npm run build:html && npm run build:vue && npm run build:react && npm run build:next",
+    "build:html": "cd html-css-js-version && npm run build",
+    "build:vue": "cd vue-version && npm run build",
+    "build:react": "cd react-version && npm run build",
+    "build:next": "cd nextjs-version && npm run build",
+    "build:analyze": "npm run build -- --analyze",
+    "deploy": "npm run deploy:github",
+    "deploy:github": "gh-pages -d html-css-js-version/dist -m \"deploy: \$(date -u +'%Y-%m-%dT%H:%M:%SZ')\"",
+    "deploy:netlify": "netlify deploy --prod --dir=html-css-js-version/dist",
+    "deploy:vercel": "vercel --prod",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.vue --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,vue,html,css,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,vue,html,css,json,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:a11y": "pa11y-ci",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./reports/lighthouse.html",
+    "lighthouse:ci": "lighthouse http://localhost:3000 --output=json --output-path=./.lighthouseci/report.json",
+    "link-check": "find . -name '*.html' -exec link-checker {} \\;",
+    "optimize:images": "node scripts/optimize-images.js",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "generate:rss": "node scripts/generate-rss.js",
+    "extract:i18n": "node scripts/extract-i18n.js",
+    "validate:links": "node scripts/validate-links.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-vue": "^9.26.0",
+    "gh-pages": "^6.1.1",
+    "husky": "^9.0.11",
+    "lighthouse": "^11.7.1",
+    "lint-staged": "^15.2.5",
+    "live-server": "^1.1.6",
+    "pa11y-ci": "^3.1.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
+  }
+}
