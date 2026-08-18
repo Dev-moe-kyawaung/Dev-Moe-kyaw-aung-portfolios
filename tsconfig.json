@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./html-css-js-version/*"],
+      "@components/*": ["./html-css-js-version/components/*"],
+      "@utils/*": ["./html-css-js-version/utils/*"],
+      "@assets/*": ["./html-css-js-version/assets/*"],
+      "@data/*": ["./html-css-js-version/data/*"],
+      "@vue/*": ["./vue-version/src/*"],
+      "@react/*": ["./react-version/src/*"],
+      "@next/*": ["./nextjs-version/*"]
+    },
+    "types": ["node", "vitest/globals"]
+  },
+  "include": [
+    "html-css-js-version/**/*.ts",
+    "vue-version/src/**/*.ts",
+    "vue-version/src/**/*.vue",
+    "react-version/src/**/*.ts",
+    "react-version/src/**/*.tsx",
+    "nextjs-version/**/*.ts",
+    "nextjs-version/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "dist", "build", "coverage"]
+}
