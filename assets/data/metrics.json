@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "lastUpdated": "2026-08-18T12:00:00Z",
+    "currency": "USD",
+    "timezone": "Asia/Bangkok"
+  },
+  "overview": {
+    "totalUsers": 485000,
+    "totalRevenue": "\$342,000",
+    "totalProjects": 40,
+    "totalRepositories": 43,
+    "githubStars": 8945,
+    "githubForks": 3267,
+    "certificates": 82,
+    "yearsExperience": 12
+  },
+  "products": [
+    {
+      "id": "pos-ultimate-pro-max",
+      "name": "POS Ultimate Pro Max",
+      "category": "POS",
+      "metrics": {
+        "users": {
+          "total": 450,
+          "daily": 285,
+          "weekly": 398,
+          "monthly": 445,
+          "growth": "+12% MoM"
+        },
+        "revenue": {
+          "mrr": 85000,
+          "arr": 1020000,
+          "ltv": 12500,
+          "cac": 450,
+          "growth": "+18% MoM"
+        },
+        "engagement": {
+          "dailyActiveUsers": 285,
+          "weeklyActiveUsers": 398,
+          "monthlyActiveUsers": 445,
+          "retention1Day": 92,
+          "retention7Day": 78,
+          "retention30Day": 65,
+          "retention90Day": 52,
+          "churn": 3.2
+        },
+        "performance": {
+          "transactions": 2500000,
+          "avgTransactionValue": 125,
+          "uptime": 99.97,
+          "responseTime": "120ms",
+          "errorRate": 0.03
+        }
+      },
+      "timeline": [
+        {
+          "date": "2025-06-01",
+          "event": "Project Started",
+          "users": 0,
+          "revenue": 0
+        },
+        {
+          "date": "2025-08-15",
+          "event": "MVP Launch",
+          "users": 12,
+          "revenue": 1200
+        },
+        {
+          "date": "2025-11-01",
+          "event": "Public Launch",
+          "users": 85,
+          "revenue": 8500
+        },
+        {
+          "date": "2026-02-01",
+          "event": "v2.0 Release",
+          "users": 245,
+          "revenue": 42000
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "users": 450,
+          "revenue": 85000
+        }
+      ]
+    },
+    {
+      "id": "social-dashboard",
+      "name": "Social Dashboard",
+      "category": "Dashboard",
+      "metrics": {
+        "users": {
+          "total": 15000,
+          "daily": 3200,
+          "weekly": 8500,
+          "monthly": 12000,
+          "growth": "+15% MoM"
+        },
+        "revenue": {
+          "mrr": 12000,
+          "arr": 144000,
+          "ltv": 850,
+          "cac": 125,
+          "growth": "+22% MoM"
+        },
+        "engagement": {
+          "dailyActiveUsers": 3200,
+          "weeklyActiveUsers": 8500,
+          "monthlyActiveUsers": 12000,
+          "retention1Day": 85,
+          "retention7Day": 68,
+          "retention30Day": 52,
+          "retention90Day": 38,
+          "churn": 5.8
+        },
+        "performance": {
+          "apiCalls": 45000000,
+          "avgSessionDuration": "18m 32s",
+          "pagesPerSession": 8.5,
+          "bounceRate": 28,
+          "nps": 72
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-01-15",
+          "event": "Project Started",
+          "users": 0,
+          "revenue": 0
+        },
+        {
+          "date": "2026-02-01",
+          "event": "MVP Launch",
+          "users": 250,
+          "revenue": 1500
+        },
+        {
+          "date": "2026-03-15",
+          "event": "Public Launch",
+          "users": 2500,
+          "revenue": 4500
+        },
+        {
+          "date": "2026-08-18",
+          "event": "Current",
+          "users": 15000,
+          "revenue": 12000
+        }
+      ]
+    },
+    {
+      "id": "casino-app",
+      "name": "Casino App",
+      "category": "Game",
+      "metrics": {
+        "users": {
+          "total": 125000,
+          "daily": 45000,
+          "weekly": 85000,
+          "monthly": 110000,
+          "growth": "+8% MoM"
+        },
+        "revenue": {
+          "mrr": 125000,
+          "arr": 1500000,
+          "ltv": 280,
+          "cac": 45,
+          "arpu": 28,
+          "arppu": 95,
+          "growth": "+12% MoM"
+        },
+        "engagement": {
+          "dailyActiveUsers": 45000,
+          "weeklyActiveUsers": 85000,
+          "monthlyActiveUsers": 110000,
+          "retention1Day": 78,
+          "retention7Day": 62,
+          "retention30Day": 52,
+          "retention90Day": 42,
+          "churn": 8.5,
+          "avgSessionDuration": "22m 15s",
+          "sessionsPerDay": 4.2
+        },
+        "performance": {
+          "gamesPlayed": 8500000,
+          "purchases": 45000,
+          "conversionRate": 3.8,
+          "avgPurchaseValue": 12.50
+        }
+      }
+    },
+    {
+      "id": "snake-game-app",
+      "name": "Snake Game App",
+      "category": "Game",
+      "metrics": {
+        "users": {
+          "total": 85000,
+          "daily": 28000,
+          "weekly": 52000,
+          "monthly": 68000,
+          "growth": "+5% MoM"
+        },
+        "revenue": {
+          "mrr": 8500,
+          "arr": 102000,
+          "ltv": 45,
+          "cac": 8,
+          "arpu": 3.2,
+          "growth": "+10% MoM"
+        },
+        "engagement": {
+          "dailyActiveUsers": 28000,
+          "weeklyActiveUsers": 52000,
+          "monthlyActiveUsers": 68000,
+          "retention1Day": 72,
+          "retention7Day": 58,
+          "retention30Day": 45,
+          "retention90Day": 35,
+          "churn": 6.2,
+          "avgSessionDuration": "8m 45s",
+          "gamesPerDay": 12.5
+        },
+        "performance": {
+          "gamesPlayed": 5600000,
+          "highScores": 2300000,
+          "avgScore": 1250,
+          "topScore": 985000
+        }
+      }
+    },
+    {
+      "id": "job-portal-app",
+      "name": "Job Portal App",
+      "category": "Web",
+      "metrics": {
+        "users": {
+          "total": 35000,
+          "daily": 8500,
+          "weekly": 18000,
+          "monthly": 28000,
+          "growth": "+25% MoM"
+        },
+        "revenue": {
+          "mrr": 18000,
+          "arr": 216000,
+          "ltv": 650,
+          "cac": 85,
+          "growth": "+35% MoM"
+        },
+        "engagement": {
+          "dailyActiveUsers": 8500,
+          "weeklyActiveUsers": 18000,
+          "monthlyActiveUsers": 28000,
+          "retention1Day": 82,
+          "retention7Day": 65,
+          "retention30Day": 48,
+          "retention90Day": 35,
+          "churn": 4.5
+        },
+        "performance": {
+          "jobs": 12000,
+          "applications": 180000,
+          "hires": 4500,
+          "successRate": 2.5,
+          "avgTimeToHire": "18 days"
+        }
+      }
+    }
+  ],
+  "aggregated": {
+    "totalUsers": 485000,
+    "totalDailyActiveUsers": 125000,
+    "totalMonthlyActiveUsers": 320000,
+    "totalMRR": 342000,
+    "totalARR": 4104000,
+    "avgRetention30Day": 56,
+    "avgChurn": 5.2,
+    "totalTransactions": 8500000,
+    "totalRevenue": "\$4,104,000"
+  },
+  "growth": {
+    "users": {
+      "2024-Q4": 125000,
+      "2025-Q1": 185000,
+      "2025-Q2": 245000,
+      "2025-Q3": 320000,
+      "2025-Q4": 395000,
+      "2026-Q1": 445000,
+      "2026-Q2": 485000,
+      "growth": "+288% YoY"
+    },
+    "revenue": {
+      "2024-Q4": 85000,
+      "2025-Q1": 145000,
+      "2025-Q2": 225000,
+      "2025-Q3": 295000,
+      "2025-Q4": 365000,
+      "2026-Q1": 425000,
+      "2026-Q2": 485000,
+      "growth": "+470% YoY"
+    }
+  }
+}
