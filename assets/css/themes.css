@@ -1,0 +1,24 @@
+/* assets/css/themes.css */
+
+[data-theme="light"] {
+  --color-bg: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-2: #f1f5f9;
+  --color-bg-card: #ffffff;
+  --color-text: #1e293b;
+  --color-text-light: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: rgba(15, 23, 42, .12);
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, .92);
+}
+
+[data-theme="light"] .hero-overlay {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(248, 250, 252, .95) 100%
+  );
+}
