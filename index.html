@@ -1,2611 +1,786 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" data-theme="dark">
 <head>
-  <!-- ============================================
-       META & SEO
-       ============================================ -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Moe Kyaw Aung | Senior Android Developer</title>
+
+  <meta
+    name="description"
+    content="Moe Kyaw Aung - Senior Android Developer and Technical Founder."
+  >
+  <meta name="author" content="Moe Kyaw Aung">
+  <meta name="theme-color" content="#6366f1">
+
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
 
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/components.css">
-<link rel="stylesheet" href="assets/css/animations.css">
-<link rel="stylesheet" href="assets/css/themes.css">
+  <!-- Icons -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/images/icons/favicon.svg"
+  >
 
-  <!-- Primary Meta Tags -->
-  <title>Moe Kyaw Aung | Senior Android Developer & Technical Founder</title>
-  <meta name="title" content="Moe Kyaw Aung | Senior Android Developer & Technical Founder">
-  <meta name="description" content="Senior Android Engineer with 12+ years experience building secure, scalable mobile applications using Kotlin, Jetpack Compose & Modern Architecture. Founder of multiple SaaS products with \$255K+ MRR.">
-  <meta name="author" content="Moe Kyaw Aung">
-  <meta name="keywords" content="Android Developer, Kotlin, Jetpack Compose, Mobile Developer, Technical Founder, SaaS, Startup, Firebase, Clean Architecture, Myanmar, Bangkok">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="theme-color" content="#1a1a2e">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dev-moe-kyawaung.github.io/">
-  <meta property="og:title" content="Moe Kyaw Aung | Senior Android Developer & Technical Founder">
-  <meta property="og:description" content="Senior Android Engineer with 12+ years experience. Founder of multiple SaaS products with \$255K+ MRR.">
-  <meta property="og:image" content="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp">
-  <meta property="og:site_name" content="Moe Kyaw Aung Portfolio">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://dev-moe-kyawaung.github.io/">
-  <meta property="twitter:title" content="Moe Kyaw Aung | Senior Android Developer">
-  <meta property="twitter:description" content="Senior Android Engineer with 12+ years experience. Founder of multiple SaaS products.">
-  <meta property="twitter:image" content="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://dev-moe-kyawaung.github.io/">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="/manifest.json">
-  
-  <!-- Preconnect to external resources -->
+  <link
+    rel="apple-touch-icon"
+    href="assets/images/icons/icon-192.png"
+  >
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://res.cloudinary.com">
-  <link rel="preconnect" href="https://api.github.com">
-  
-  <!-- ============================================
-       STYLESHEETS
-       ============================================ -->
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  <!-- Animate On Scroll (AOS) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
-  
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
-  <link rel="stylesheet" href="/assets/css/animations.css">
-  <link rel="stylesheet" href="/assets/css/themes.css">
-  
-  <!-- Critical CSS (Inline for faster FCP) -->
-  <style>
-    /* Critical CSS for above-the-fold content */
-    :root {
-      --color-primary: #6366f1;
-      --color-primary-dark: #4f46e5;
-      --color-bg: #0f0f1a;
-      --color-bg-surface: #1a1a2e;
-      --color-text: #e0e0e0;
-      --color-text-muted: #a0a0a0;
-      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-    }
-    
-    body {
-      font-family: var(--font-sans);
-      background-color: var(--color-bg);
-      color: var(--color-text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    
-    /* Hero Section Critical Styles */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      padding: 2rem;
-    }
-    
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-    }
-    
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 1280px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    /* Loading States */
-    .skeleton {
-      background: linear-gradient(90deg, #1a1a2e 25%, #2a2a3e 50%, #1a1a2e 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.5s infinite;
-    }
-    
-    @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-    
-    /* Performance: Prevent layout shift */
-    img, video {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-  
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Moe Kyaw Aung",
-    "alternateName": "MoeKyawAung",
-    "url": "https://dev-moe-kyawaung.github.io",
-    "image": "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp",
-    "sameAs": [
-      "https://github.com/Dev-moe-kyawaung",
-      "https://www.linkedin.com/in/moe-kyaw-aung-2653093a1",
-      "https://gravatar.com/moekyawaung13721",
-      "https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG"
-    ],
-    "jobTitle": "Senior Android Developer & Technical Founder",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Self-Employed"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tachileik",
-      "addressCountry": "Myanmar"
-    },
-    "email": "mailto:moekyawaung@programmer.net",
-    "telephone": "+95 9 889 000 889",
-    "knowsAbout": [
-      "Android Development",
-      "Kotlin",
-      "Jetpack Compose",
-      "Mobile Architecture",
-      "Firebase",
-      "Clean Architecture",
-      "Startup Development",
-      "SaaS"
-    ],
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "Senior Android Developer",
-      "estimatedSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "USD",
-        "value": "\$100,000 - \$150,000"
-      },
-      "skills": "Kotlin, Android SDK, Jetpack Compose, Firebase"
-    }
-  }
-  </script>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Moe Kyaw Aung Portfolio",
-    "alternateName": "MoeKyawAung Portfolio",
-    "url": "https://dev-moe-kyawaung.github.io",
-    "description": "Senior Android Developer & Technical Founder Portfolio",
-    "author": {
-      "@type": "Person",
-      "name": "Moe Kyaw Aung"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://dev-moe-kyawaung.github.io/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- Main CSS files -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+
+  <!-- External libraries -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+    defer
+  ></script>
+
+  <!-- Your main JavaScript -->
+  <script
+    type="module"
+    src="assets/js/main.js"
+  ></script>
 </head>
 
-<body class="antialiased">
-  <!-- ============================================
-       PRELOADER
-       ============================================ -->
+<body>
+
+  <!-- Preloader -->
   <div id="preloader" class="preloader">
     <div class="preloader-content">
-      <div class="preloader-logo">
-        <svg class="preloader-icon" viewBox="0 0 100 100" width="80" height="80">
-          <defs>
-            <linearGradient id="preloaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <circle cx="50" cy="50" r="45" fill="none" stroke="url(#preloaderGradient)" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
-            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="2s" repeatCount="indefinite"/>
-            <animate attributeName="stroke-dashoffset" from="283" to="0" dur="2s" repeatCount="indefinite"/>
-          </circle>
-          <path d="M50 20 L50 50 L70 70" fill="none" stroke="url(#preloaderGradient)" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-      </div>
       <div class="preloader-text">
-        <span class="preloader-word">Loading</span>
-        <span class="preloader-dots">
-          <span class="dot">.</span>
-          <span class="dot">.</span>
-          <span class="dot">.</span>
-        </span>
+        Loading<span class="preloader-dots">...</span>
       </div>
+
       <div class="preloader-progress">
         <div class="preloader-bar"></div>
       </div>
     </div>
   </div>
-  
-  <!-- ============================================
-       PARTICLE BACKGROUND
-       ============================================ -->
+
+  <!-- Background particles -->
   <div id="particles-js" class="particles-container"></div>
-  
-  <!-- ============================================
-       NAVIGATION
-       ============================================ -->
-  <nav id="navbar" class="navbar">
-    <div class="navbar-container">
-      <!-- Logo -->
-      <a href="/" class="navbar-logo" aria-label="Moe Kyaw Aung Portfolio">
-        <span class="logo-text">
-          <span class="logo-m">M</span>
-          <span class="logo-ka">KA</span>
-        </span>
-        <span class="logo-tagline">Senior Android Developer</span>
-      </a>
-      
-      <!-- Desktop Navigation -->
-      <div class="navbar-menu">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link active">
-              <i class="fas fa-home"></i>
-              <span>Home</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link">
-              <i class="fas fa-user"></i>
-              <span>About</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#projects" class="navbar-link">
-              <i class="fas fa-code"></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#startups" class="navbar-link">
-              <i class="fas fa-rocket"></i>
-              <span>Startups</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#metrics" class="navbar-link">
-              <i class="fas fa-chart-line"></i>
-              <span>Metrics</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#certificates" class="navbar-link">
-              <i class="fas fa-certificate"></i>
-              <span>Certificates</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#experience" class="navbar-link">
-              <i class="fas fa-briefcase"></i>
-              <span>Experience</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#skills" class="navbar-link">
-              <i class="fas fa-layer-group"></i>
-              <span>Skills</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link">
-              <i class="fas fa-pen-fancy"></i>
-              <span>Blog</span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#contact" class="navbar-link">
-              <i class="fas fa-envelope"></i>
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Right Side Actions -->
-      <div class="navbar-actions">
-        <!-- Theme Toggle -->
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-          <i class="fas fa-moon theme-icon-moon"></i>
-          <i class="fas fa-sun theme-icon-sun"></i>
-        </button>
-        
-        <!-- Language Selector -->
-        <div class="language-selector">
-          <button class="language-btn" aria-label="Select language">
-            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
-            <span>EN</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="language-dropdown">
-            <button class="language-option active">
-              <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
-              <span>English</span>
-            </button>
-            <button class="language-option">
-              <img src="https://flagcdn.com/w40/mm.png" alt="Myanmar" class="flag-icon">
-              <span>မြန်မာ</span>
-            </button>
-            <button class="language-option">
-              <img src="https://flagcdn.com/w40/th.png" alt="Thailand" class="flag-icon">
-              <span>ไทย</span>
-            </button>
-          </div>
-        </div>
-        
-        <!-- Mobile Menu Toggle -->
-        <button class="navbar-toggle" aria-label="Toggle menu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- ============================================
-       MOBILE MENU
-       ============================================ -->
-  <div class="mobile-menu">
-    <div class="mobile-menu-content">
-      <div class="mobile-menu-header">
-        <div class="mobile-menu-logo">
+
+  <!-- Navigation -->
+  <header>
+    <nav id="navbar" class="navbar">
+      <div class="navbar-container">
+
+        <a href="#home" class="navbar-logo">
           <span class="logo-text">MKA</span>
+          <span class="logo-tagline">Android Developer</span>
+        </a>
+
+        <div class="navbar-menu">
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">
+                <i class="fas fa-layer-group"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link">
+                <i class="fas fa-code"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#experience" class="navbar-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <button class="mobile-menu-close" aria-label="Close menu">
+
+        <div class="navbar-actions">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon theme-icon-moon"></i>
+            <i class="fas fa-sun theme-icon-sun"></i>
+          </button>
+
+          <button
+            class="navbar-toggle"
+            type="button"
+            aria-label="Open menu"
+          >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <aside class="mobile-menu">
+    <div class="mobile-menu-content">
+
+      <div class="mobile-menu-header">
+        <span class="logo-text">MKA</span>
+
+        <button
+          class="mobile-menu-close"
+          type="button"
+          aria-label="Close menu"
+        >
           <i class="fas fa-times"></i>
         </button>
       </div>
+
       <ul class="mobile-menu-list">
-        <li><a href="#home" class="mobile-menu-link active"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#about" class="mobile-menu-link"><i class="fas fa-user"></i> About</a></li>
-        <li><a href="#projects" class="mobile-menu-link"><i class="fas fa-code"></i> Projects</a></li>
-        <li><a href="#startups" class="mobile-menu-link"><i class="fas fa-rocket"></i> Startups</a></li>
-        <li><a href="#metrics" class="mobile-menu-link"><i class="fas fa-chart-line"></i> Metrics</a></li>
-        <li><a href="#certificates" class="mobile-menu-link"><i class="fas fa-certificate"></i> Certificates</a></li>
-        <li><a href="#experience" class="mobile-menu-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-        <li><a href="#skills" class="mobile-menu-link"><i class="fas fa-layer-group"></i> Skills</a></li>
-        <li><a href="#blog" class="mobile-menu-link"><i class="fas fa-pen-fancy"></i> Blog</a></li>
-        <li><a href="#contact" class="mobile-menu-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li>
+          <a href="#home" class="mobile-menu-link active">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="mobile-menu-link">
+            <i class="fas fa-user"></i>
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" class="mobile-menu-link">
+            <i class="fas fa-layer-group"></i>
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a href="#projects" class="mobile-menu-link">
+            <i class="fas fa-code"></i>
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="#experience" class="mobile-menu-link">
+            <i class="fas fa-briefcase"></i>
+            Experience
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" class="mobile-menu-link">
+            <i class="fas fa-envelope"></i>
+            Contact
+          </a>
+        </li>
       </ul>
-      <div class="mobile-menu-footer">
-        <div class="mobile-menu-social">
-          <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener" aria-label="Gravatar">
-            <i class="fas fa-grin"></i>
-          </a>
-          <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" target="_blank" rel="noopener" aria-label="YouTube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-        <p class="mobile-menu-copyright">© 2026 Moe Kyaw Aung. All rights reserved.</p>
-      </div>
+
     </div>
-  </div>
-  
-  <!-- ============================================
-       MAIN CONTENT
-       ============================================ -->
-  <main id="main-content">
-    
-    <!-- ============================================
-         HERO SECTION
-         ============================================ -->
-    <section id="home" class="hero section">
-      <!-- Background Video/Image -->
-      <div class="hero-bg">
-        <video autoplay muted loop playsinline class="hero-video">
-          <source src="https://res.cloudinary.com/dye5qpwii/video/upload/v1779052704/Javier_Pardina_10_ay7iai.mp4" type="video/mp4">
-          <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp" alt="Hero background" class="hero-image-fallback">
-        </video>
-        <div class="hero-overlay"></div>
-      </div>
-      
-      <!-- Hero Content -->
-      <div class="hero-content">
-        <!-- Profile Image -->
-        <div class="hero-profile" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="profile-image-wrapper">
-            <img 
-              src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp" 
-              alt="Moe Kyaw Aung - Senior Android Developer"
-              class="profile-image"
-              loading="eager"
-              width="200"
-              height="200"
-            >
-            <div class="profile-ring"></div>
-            <div class="profile-ring-2"></div>
-            <div class="profile-status">
-              <span class="status-dot"></span>
-              <span class="status-text">Available for work</span>
+  </aside>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-profile">
+            <div class="profile-image-wrapper">
+              <img
+                class="profile-image"
+                src="assets/images/profile.webp"
+                alt="Moe Kyaw Aung"
+                width="200"
+                height="200"
+              >
             </div>
           </div>
-        </div>
-        
-        <!-- Hero Title -->
-        <div class="hero-title-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <h1 class="hero-title">
-            <span class="hero-greeting">Hello, I'm</span>
-            <span class="hero-name typing-container">
-              <span class="typing-text">Moe Kyaw Aung</span>
-              <span class="typing-cursor"></span>
-            </span>
+
+          <p class="hero-greeting">Hello, I'm</p>
+
+          <h1 class="hero-name">
+            Moe Kyaw Aung
           </h1>
-          
+
           <div class="hero-subtitle">
-            <span class="hero-role">Senior Android Developer</span>
-            <span class="hero-divider">•</span>
-            <span class="hero-location">
-              <i class="fas fa-map-marker-alt"></i>
-              Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭
-            </span>
+            Senior Android Developer
           </div>
-          
+
           <p class="hero-description">
-            Passionate and self-motivated developer focused on building responsive, modern, and user-friendly mobile experiences. 
-            <strong>12+ years</strong> of experience with <strong>Kotlin</strong>, <strong>Jetpack Compose</strong>, 
-            <strong>MVVM</strong>, and <strong>Clean Architecture</strong>.
+            I build modern, scalable, and user-friendly mobile applications
+            using Kotlin, Jetpack Compose, Firebase, and clean architecture.
           </p>
-        </div>
-        
-        <!-- Hero Stats -->
-        <div class="hero-stats" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-          <div class="stat-item">
-            <div class="stat-number" data-count="82">0</div>
-            <div class="stat-label">Certificates</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="40">0</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="12">0</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="255">0</div>
-            <div class="stat-label">K MRR (\$)</div>
-          </div>
-        </div>
-        
-        <!-- Hero Buttons -->
-        <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fas fa-rocket"></i>
-            <span>View My Work</span>
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <i class="fas fa-envelope"></i>
-            <span>Contact Me</span>
-          </a>
-          <a href="/assets/resume.pdf" download class="btn btn-outline" target="_blank" rel="noopener">
-            <i class="fas fa-download"></i>
-            <span>Download CV</span>
-          </a>
-        </div>
-        
-        <!-- Social Links -->
-        <div class="hero-social" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-          <span class="social-label">Follow me:</span>
-          <div class="social-icons">
-            <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
-              <i class="fab fa-github"></i>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-code"></i>
+              View Projects
             </a>
-            <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener" aria-label="Gravatar" class="social-icon">
-              <i class="fas fa-grin"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://bsky.app/profile/moekyawaung96.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky" class="social-icon">
-              <i class="fas fa-cloud"></i>
+
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i>
+              Contact Me
             </a>
           </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="12">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number" data-count="40">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number" data-count="82">0</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number" data-count="12">0</div>
+              <div class="stat-label">Products</div>
+            </div>
+          </div>
+
         </div>
-      </div>
-      
-      <!-- Scroll Indicator -->
-      <div class="scroll-indicator" data-aos="fade-in" data-aos-delay="1000">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div class="scroll-text">Scroll Down</div>
       </div>
     </section>
-    
-    <!-- ============================================
-         ABOUT SECTION
-         ============================================ -->
+
+    <!-- About -->
     <section id="about" class="section about-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
+
+        <div class="section-header">
           <span class="section-label">About Me</span>
-          <h2 class="section-title">Developer by passion,<br/><span class="text-gradient">learner by nature</span></h2>
+
+          <h2 class="section-title">
+            Developer by passion,
+            <span class="text-gradient">learner by nature</span>
+          </h2>
         </div>
-        
+
         <div class="about-grid">
-          <!-- About Content -->
-          <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
-            <div class="about-images">
-              <div class="about-image-main">
-                <img 
-                  src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_12_iv8kpm.webp" 
-                  alt="Moe Kyaw Aung working"
-                  loading="lazy"
-                  width="400"
-                  height="500"
-                >
-              </div>
-              <div class="about-image-secondary">
-                <img 
-                  src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_3_zqrhhr.webp" 
-                  alt="Moe Kyaw Aung coding"
-                  loading="lazy"
-                  width="200"
-                  height="250"
-                >
-              </div>
-              <div class="experience-badge">
-                <span class="exp-number">12+</span>
-                <span class="exp-text">Years Experience</span>
-              </div>
-            </div>
+
+          <div class="about-image">
+            <img
+              src="assets/images/about.webp"
+              alt="Moe Kyaw Aung working"
+              loading="lazy"
+            >
           </div>
-          
-          <!-- About Info -->
-          <div class="about-info" data-aos="fade-left" data-aos-duration="1000">
-            <div class="about-text">
-              <p class="about-paragraph">
-                I am a passionate and self-motivated developer who believes in continuous learning and growth. 
-                From web development to mobile apps, databases to AI — I consistently expand my skill set across 
-                the full technology spectrum.
-              </p>
-              <p class="about-paragraph">
-                My certification portfolio from Programming Hub demonstrates practical, structured learning across 
-                <strong>9 major domains</strong> and over <strong>82 technical subjects</strong> — from programming 
-                languages and web frameworks to machine learning, blockchain, and cybersecurity.
-              </p>
-              <p class="about-paragraph">
-                I build with intention: clean code, modern practices, and a genuine love for problem-solving.
-              </p>
-            </div>
-            
-            <!-- Info List -->
+
+          <div class="about-info">
+            <p>
+              I am a passionate software developer focused on building
+              practical, reliable, and modern digital products.
+            </p>
+
+            <p>
+              My main focus is Android development, but I also work with
+              web applications, backend systems, cloud services, and SaaS products.
+            </p>
+
             <div class="info-list">
               <div class="info-item">
-                <span class="info-key">Full Name:</span>
-                <span class="info-value">Moe Kyaw Aung</span>
+                <strong>Name:</strong>
+                <span>Moe Kyaw Aung</span>
               </div>
+
               <div class="info-item">
-                <span class="info-key">GitHub:</span>
-                <span class="info-value accent">Dev-moe-kyawaung</span>
+                <strong>Role:</strong>
+                <span>Senior Android Developer</span>
               </div>
+
               <div class="info-item">
-                <span class="info-key">Certificates:</span>
-                <span class="info-value accent">82+ (Programming Hub)</span>
+                <strong>Location:</strong>
+                <span>Myanmar / Thailand</span>
               </div>
+
               <div class="info-item">
-                <span class="info-key">Focus:</span>
-                <span class="info-value">Full-Stack Development</span>
+                <strong>Status:</strong>
+                <span>Available for work</span>
               </div>
-              <div class="info-item">
-                <span class="info-key">Status:</span>
-                <span class="info-value accent">Open to Work 🟢</span>
-              </div>
-            </div>
-            
-            <!-- CTA Buttons -->
-            <div class="about-cta">
-              <a href="#contact" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i>
-                <span>Let's Talk</span>
-              </a>
-              <a href="#projects" class="btn btn-outline">
-                <i class="fas fa-eye"></i>
-                <span>View Projects</span>
-              </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
-    
-    <!-- ============================================
-         SKILLS SECTION
-         ============================================ -->
+
+    <!-- Skills -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
+
+        <div class="section-header">
           <span class="section-label">Tech Stack</span>
-          <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+
+          <h2 class="section-title">
+            Skills &
+            <span class="text-gradient">Technologies</span>
+          </h2>
         </div>
-        
-        <!-- Skills Cloud -->
-        <div class="skills-cloud" data-aos="zoom-in" data-aos-duration="1000">
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="0">🐍 Python</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="50">☕ Java</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="100">🟨 JavaScript</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="150">🔷 TypeScript</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="200">🤖 Kotlin</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="250">🎯 Dart</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="300">⚛️ React</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="350">💚 Vue.js</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="400">▲ Next.js</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="450">📦 Node.js</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="500">🐦 Flutter</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="550">📱 Android SDK</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="600">🎨 Jetpack Compose</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="650">☁️ Firebase</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="700">🗄️ PostgreSQL</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="750">🍃 MongoDB</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="800">⚡ Redis</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="850">🐳 Docker</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="900">☁️ AWS</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="950">🔗 Blockchain</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1000">🤖 Machine Learning</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1050">🔐 Cyber Security</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1100">🏗️ Clean Architecture</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1150">📊 MVVM</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1200">🔄 Git</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1250">🎨 Figma</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1300">🧪 Testing</span>
-          <span class="skill-chip" data-aos="fade-in" data-aos-delay="1350">🚀 CI/CD</span>
+
+        <div class="skills-cloud">
+          <span class="skill-chip">Kotlin</span>
+          <span class="skill-chip">Java</span>
+          <span class="skill-chip">Android SDK</span>
+          <span class="skill-chip">Jetpack Compose</span>
+          <span class="skill-chip">Firebase</span>
+          <span class="skill-chip">MVVM</span>
+          <span class="skill-chip">Clean Architecture</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">React</span>
+          <span class="skill-chip">Vue.js</span>
+          <span class="skill-chip">Node.js</span>
+          <span class="skill-chip">PostgreSQL</span>
+          <span class="skill-chip">MongoDB</span>
+          <span class="skill-chip">Docker</span>
+          <span class="skill-chip">Git</span>
         </div>
-        
-        <!-- Skills Categories -->
-        <div class="skills-categories">
-          <!-- Mobile Development -->
-          <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
-            <div class="category-icon">📱</div>
-            <h3 class="category-title">Mobile Development</h3>
-            <div class="category-bar">
-              <div class="category-progress" style="width: 95%"></div>
-            </div>
-            <ul class="category-skills">
-              <li>Kotlin (Expert)</li>
-              <li>Android SDK (Expert)</li>
-              <li>Jetpack Compose (Expert)</li>
-              <li>Java (Expert)</li>
-              <li>Flutter (Advanced)</li>
-            </ul>
-          </div>
-          
-          <!-- Frontend Web -->
-          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-            <div class="category-icon">🌐</div>
-            <h3 class="category-title">Frontend Web</h3>
-            <div class="category-bar">
-              <div class="category-progress" style="width: 88%"></div>
-            </div>
-            <ul class="category-skills">
-              <li>JavaScript (Advanced)</li>
-              <li>React (Advanced)</li>
-              <li>Vue.js (Advanced)</li>
-              <li>TypeScript (Advanced)</li>
-              <li>Tailwind CSS (Advanced)</li>
-            </ul>
-          </div>
-          
-          <!-- Backend Development -->
-          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-            <div class="category-icon">☁️</div>
-            <h3 class="category-title">Backend Development</h3>
-            <div class="category-bar">
-              <div class="category-progress" style="width: 82%"></div>
-            </div>
-            <ul class="category-skills">
-              <li>Node.js (Advanced)</li>
-              <li>Python (Advanced)</li>
-              <li>Express.js (Advanced)</li>
-              <li>Firebase (Expert)</li>
-              <li>PostgreSQL (Advanced)</li>
-            </ul>
-          </div>
-          
-          <!-- AI & ML -->
-          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-            <div class="category-icon">🤖</div>
-            <h3 class="category-title">AI & Machine Learning</h3>
-            <div class="category-bar">
-              <div class="category-progress" style="width: 75%"></div>
-            </div>
-            <ul class="category-skills">
-              <li>TensorFlow (Advanced)</li>
-              <li>TFLite (Advanced)</li>
-              <li>Python ML (Advanced)</li>
-              <li>Claude API (Advanced)</li>
-              <li>Computer Vision (Intermediate)</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
     </section>
-    
-    <!-- ============================================
-         PROJECTS SECTION
-         ============================================ -->
+
+    <!-- Projects -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
+
+        <div class="section-header">
           <span class="section-label">Portfolio</span>
-          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+
+          <h2 class="section-title">
+            Featured
+            <span class="text-gradient">Projects</span>
+          </h2>
         </div>
-        
-        <!-- Projects Filter -->
-        <div class="projects-filter" data-aos="fade-up">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="mobile">📱 Mobile</button>
-          <button class="filter-btn" data-filter="web">🌐 Web</button>
-          <button class="filter-btn" data-filter="pwa">⚡ PWA</button>
-          <button class="filter-btn" data-filter="game">🎮 Game</button>
-          <button class="filter-btn" data-filter="pos">💰 POS</button>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all" type="button">
+            All
+          </button>
+
+          <button class="filter-btn" data-filter="mobile" type="button">
+            Mobile
+          </button>
+
+          <button class="filter-btn" data-filter="web" type="button">
+            Web
+          </button>
+
+          <button class="filter-btn" data-filter="pwa" type="button">
+            PWA
+          </button>
         </div>
-        
-        <!-- Projects Grid -->
+
         <div class="projects-grid">
-          <!-- Project Card 1: Social Dashboard -->
-          <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="0">
+
+          <article class="project-card" data-category="mobile">
             <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778747388/image-1_1_khsx9s.png" 
-                alt="Social Dashboard"
+              <img
+                src="assets/images/projects/android-app.webp"
+                alt="Android application project"
                 loading="lazy"
-                width="600"
-                height="400"
               >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/social-dashboard" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/social-dashboard" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
             </div>
+
             <div class="project-content">
               <div class="project-tags">
-                <span class="tag">Vue.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Compose</span>
+                <span class="tag">Firebase</span>
               </div>
-              <h3 class="project-title">Social Dashboard</h3>
-              <p class="project-description">
-                Advanced social media analytics dashboard with real-time metrics, engagement tracking, and AI-powered insights.
+
+              <h3>Android Application</h3>
+
+              <p>
+                A modern Android application built with Kotlin and Jetpack Compose.
               </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-users"></i>
-                  <span>15K users</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-dollar-sign"></i>
-                  <span>\$12K MRR</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>245 ⭐</span>
-                </div>
-              </div>
+
+              <a href="#" class="btn btn-sm btn-outline">
+                View Project
+              </a>
             </div>
-          </div>
-          
-          <!-- Project Card 2: POS Ultimate Pro Max -->
-          <div class="project-card" data-category="pos" data-aos="fade-up" data-aos-delay="100">
+          </article>
+
+          <article class="project-card" data-category="web">
             <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778795847/copilot_image_1778795115579_acfm5j.png" 
-                alt="POS Ultimate Pro Max"
+              <img
+                src="assets/images/projects/social-dashboard.webp"
+                alt="Social dashboard project"
                 loading="lazy"
-                width="600"
-                height="400"
               >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/POS-Ultimate-Pro-Max" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/POS-Ultimate-Pro-Max" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
             </div>
+
             <div class="project-content">
               <div class="project-tags">
                 <span class="tag">React</span>
                 <span class="tag">Node.js</span>
-                <span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span>
               </div>
-              <h3 class="project-title">POS Ultimate Pro Max</h3>
-              <p class="project-description">
-                Enterprise-grade Point of Sale system with inventory management, analytics, and multi-location support.
+
+              <h3>Social Dashboard</h3>
+
+              <p>
+                Analytics dashboard with user metrics and social media insights.
               </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-store"></i>
-                  <span>450 businesses</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-dollar-sign"></i>
-                  <span>\$85K MRR</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>567 ⭐</span>
-                </div>
-              </div>
+
+              <a href="#" class="btn btn-sm btn-outline">
+                View Project
+              </a>
             </div>
-          </div>
-          
-          <!-- Project Card 3: Video Player -->
-          <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          </article>
+
+          <article class="project-card" data-category="pwa">
             <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778795825/cloud-icon-poster-1_2_opl7sy.png" 
-                alt="Video Player"
+              <img
+                src="assets/images/projects/pwa-app.webp"
+                alt="Progressive web app project"
                 loading="lazy"
-                width="600"
-                height="400"
               >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/video-player" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/video-player" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">HTML5</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">CSS3</span>
-              </div>
-              <h3 class="project-title">Video Player</h3>
-              <p class="project-description">
-                Advanced HTML5 video player with custom controls, playlists, subtitles, and analytics.
-              </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-play"></i>
-                  <span>450K plays</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-users"></i>
-                  <span>12K users</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>312 ⭐</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project Card 4: Game Collection -->
-          <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763532/MKA_11_jbijtv.webp" 
-                alt="Game Collection"
-                loading="lazy"
-                width="600"
-                height="400"
-              >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/game-collection" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/game-collection" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">Canvas</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Firebase</span>
-              </div>
-              <h3 class="project-title">Game Collection</h3>
-              <p class="project-description">
-                Collection of classic arcade games rebuilt with modern web technologies.
-              </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-gamepad"></i>
-                  <span>1.2M plays</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-users"></i>
-                  <span>25K users</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>428 ⭐</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project Card 5: PWA App -->
-          <div class="project-card" data-category="pwa" data-aos="fade-up" data-aos-delay="400">
-            <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp" 
-                alt="PWA App"
-                loading="lazy"
-                width="600"
-                height="400"
-              >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/pwa-app" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/pwa-app" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+
             <div class="project-content">
               <div class="project-tags">
                 <span class="tag">PWA</span>
-                <span class="tag">Service Worker</span>
-                <span class="tag">Workbox</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Offline</span>
               </div>
-              <h3 class="project-title">PWA App</h3>
-              <p class="project-description">
-                Progressive Web App with offline-first architecture, push notifications, and installable experience.
+
+              <h3>Progressive Web App</h3>
+
+              <p>
+                Installable web application with offline support and responsive UI.
               </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-download"></i>
-                  <span>42% install</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-wifi"></i>
-                  <span>65% offline</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>189 ⭐</span>
-                </div>
-              </div>
+
+              <a href="#" class="btn btn-sm btn-outline">
+                View Project
+              </a>
             </div>
-          </div>
-          
-          <!-- Project Card 6: Job Portal -->
-          <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
-            <div class="project-image">
-              <img 
-                src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778795829/copilot_image_1778795000722_okryxj.png" 
-                alt="Job Portal App"
-                loading="lazy"
-                width="600"
-                height="400"
-              >
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="https://github.com/moekyawaung-tech/Job-Portal-App" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://moekyawaung-tech.github.io/Job-Portal-App" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">Next.js</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">OpenAI</span>
-              </div>
-              <h3 class="project-title">Job Portal App</h3>
-              <p class="project-description">
-                Full-stack job board with AI-powered job matching, resume builder, and interview preparation.
-              </p>
-              <div class="project-stats">
-                <div class="project-stat">
-                  <i class="fas fa-users"></i>
-                  <span>35K users</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-briefcase"></i>
-                  <span>12K jobs</span>
-                </div>
-                <div class="project-stat">
-                  <i class="fas fa-star"></i>
-                  <span>389 ⭐</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- View More Button -->
-        <div class="projects-cta" data-aos="fade-up">
-          <a href="/projects" class="btn btn-primary">
-            <i class="fas fa-th-large"></i>
-            <span>View All Projects</span>
-          </a>
+          </article>
+
         </div>
       </div>
     </section>
 
-        <!-- ============================================
-         STARTUPS SECTION
-         ============================================ -->
-    <section id="startups" class="section startups-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-label">Entrepreneurship</span>
-          <h2 class="section-title">Startup <span class="text-gradient">Ventures</span></h2>
-          <p class="section-description">
-            Founded and scaled 12+ startup ventures with combined \$255K+ MRR and 485K+ users
-          </p>
-        </div>
-        
-        <!-- Startup Stats -->
-        <div class="startup-stats" data-aos="fade-up">
-          <div class="startup-stat">
-            <div class="stat-icon">🚀</div>
-            <div class="stat-number" data-count="12">0</div>
-            <div class="stat-label">Startups Founded</div>
-          </div>
-          <div class="startup-stat">
-            <div class="stat-icon">💰</div>
-            <div class="stat-number" data-count="255">0</div>
-            <div class="stat-label">K MRR (\$)</div>
-          </div>
-          <div class="startup-stat">
-            <div class="stat-icon">👥</div>
-            <div class="stat-number" data-count="485">0</div>
-            <div class="stat-label">K Total Users</div>
-          </div>
-          <div class="startup-stat">
-            <div class="stat-icon">📈</div>
-            <div class="stat-number" data-count="75">0</div>
-            <div class="stat-label">% Success Rate</div>
-          </div>
-        </div>
-        
-        <!-- Startup Cards -->
-        <div class="startups-grid">
-          <!-- Startup 1: POS Ultimate -->
-          <div class="startup-card featured" data-aos="fade-up" data-aos-delay="0">
-            <div class="startup-badge">🏆 Top Performer</div>
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778795847/copilot_image_1778795115579_acfm5j.png" alt="POS Ultimate" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">POS Ultimate Pro Max</h3>
-                <p class="startup-tagline">Enterprise Point of Sale System</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Growth Stage</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                Multi-location POS system with inventory management, real-time analytics, and payment processing. Built for retail businesses and restaurants.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Stripe</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Businesses</span>
-                  <span class="metric-value">450</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$85K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Transactions</span>
-                  <span class="metric-value">2.5M</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Uptime</span>
-                  <span class="metric-value">99.97%</span>
-                </div>
-              </div>
-              <div class="startup-timeline">
-                <div class="timeline-item">
-                  <span class="timeline-date">Jun 2025</span>
-                  <span class="timeline-event">Founded</span>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Nov 2025</span>
-                  <span class="timeline-event">Public Launch</span>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Aug 2026</span>
-                  <span class="timeline-event">\$85K MRR</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/POS-Ultimate-Pro-Max" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>View Live</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/POS-Ultimate-Pro-Max" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Startup 2: Casino App -->
-          <div class="startup-card featured" data-aos="fade-up" data-aos-delay="100">
-            <div class="startup-badge">🔥 Fastest Growing</div>
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763532/MKA_13_i4bao3.webp" alt="Casino App" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">Casino Royale</h3>
-                <p class="startup-tagline">Social Casino Games</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Growth Stage</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                Multiplayer social casino games with virtual currency, tournaments, and social features. Available on Web, Android, and iOS.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Socket.io</span>
-                <span class="tech-tag">MongoDB</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Users</span>
-                  <span class="metric-value">125K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$125K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">DAU</span>
-                  <span class="metric-value">45K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Conversion</span>
-                  <span class="metric-value">3.8%</span>
-                </div>
-              </div>
-              <div class="startup-timeline">
-                <div class="timeline-item">
-                  <span class="timeline-date">Jul 2025</span>
-                  <span class="timeline-event">Founded</span>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Nov 2025</span>
-                  <span class="timeline-event">Public Launch</span>
-                </div>
-                <div class="timeline-item">
-                  <span class="timeline-date">Aug 2026</span>
-                  <span class="timeline-event">\$125K MRR</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/casino-app" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Play Now</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/casino-app" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Startup 3: Social Dashboard -->
-          <div class="startup-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778747388/image-1_1_khsx9s.png" alt="Social Dashboard" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">Social Dashboard</h3>
-                <p class="startup-tagline">AI-Powered Social Analytics</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Growth Stage</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                Unified dashboard for managing multiple social media accounts with AI-powered insights and automated posting.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">Vue 3</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Socket.io</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Users</span>
-                  <span class="metric-value">15K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$12K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Growth</span>
-                  <span class="metric-value">+15%</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">NPS</span>
-                  <span class="metric-value">72</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/social-dashboard" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>View Live</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/social-dashboard" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Startup 4: Job Portal -->
-          <div class="startup-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778795829/copilot_image_1778795000722_okryxj.png" alt="Job Portal" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">Myanmar Jobs</h3>
-                <p class="startup-tagline">AI-Powered Job Board</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Early Growth</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                Job board with AI-powered matching, resume builder, and interview preparation for Myanmar market.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">OpenAI</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Job Seekers</span>
-                  <span class="metric-value">35K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$18K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Jobs</span>
-                  <span class="metric-value">12K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Growth</span>
-                  <span class="metric-value">+25%</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/Job-Portal-App" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>View Live</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/Job-Portal-App" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Startup 5: Lens Lite -->
-          <div class="startup-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763536/preview_ls5ptn.webp" alt="Lens Lite" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">Lens Lite</h3>
-                <p class="startup-tagline">AI Image Editor</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Growth Stage</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                Lightweight browser-based image editor with AI enhancements, 50+ filters, and professional tools.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">HTML5 Canvas</span>
-                <span class="tech-tag">WebGL</span>
-                <span class="tech-tag">TensorFlow.js</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Users</span>
-                  <span class="metric-value">28K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$3.5K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Images</span>
-                  <span class="metric-value">1.8M</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Conversion</span>
-                  <span class="metric-value">4.2%</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/lens-lite" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Edit Now</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/lens-lite" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Startup 6: Daily Planner -->
-          <div class="startup-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="startup-header">
-              <div class="startup-logo">
-                <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_12_iv8kpm.webp" alt="Daily Planner" loading="lazy">
-              </div>
-              <div class="startup-info">
-                <h3 class="startup-name">Daily Planner</h3>
-                <p class="startup-tagline">Productivity & Habits</p>
-                <div class="startup-meta">
-                  <span class="status active">🟢 Active</span>
-                  <span class="stage">Growth Stage</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-body">
-              <p class="startup-description">
-                All-in-one productivity app with tasks, habits, time blocking, and goal tracking.
-              </p>
-              <div class="startup-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Redux</span>
-              </div>
-              <div class="startup-metrics">
-                <div class="metric">
-                  <span class="metric-label">Users</span>
-                  <span class="metric-value">22K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">MRR</span>
-                  <span class="metric-value">\$2.2K</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Tasks</span>
-                  <span class="metric-value">5.6M</span>
-                </div>
-                <div class="metric">
-                  <span class="metric-label">Retention</span>
-                  <span class="metric-value">58%</span>
-                </div>
-              </div>
-            </div>
-            <div class="startup-footer">
-              <a href="https://moekyawaung-tech.github.io/daily-planner" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Get Started</span>
-              </a>
-              <a href="https://github.com/moekyawaung-tech/daily-planner" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fab fa-github"></i>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- View All Startups -->
-        <div class="startups-cta" data-aos="fade-up">
-          <a href="/startups" class="btn btn-primary">
-            <i class="fas fa-rocket"></i>
-            <span>View All 12 Startups</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- ============================================
-         METRICS SECTION
-         ============================================ -->
-    <section id="metrics" class="section metrics-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-label">Performance</span>
-          <h2 class="section-title">Growth <span class="text-gradient">Metrics</span></h2>
-          <p class="section-description">
-            Real-time metrics across all products and ventures
-          </p>
-        </div>
-        
-        <!-- Metrics Dashboard -->
-        <div class="metrics-dashboard">
-          <!-- Overview Cards -->
-          <div class="metrics-overview">
-            <div class="metric-card" data-aos="fade-up" data-aos-delay="0">
-              <div class="metric-icon">👥</div>
-              <div class="metric-content">
-                <h3 class="metric-title">Total Users</h3>
-                <div class="metric-value" data-count="485000">0</div>
-                <div class="metric-change positive">
-                  <i class="fas fa-arrow-up"></i>
-                  <span>+288% YoY</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="metric-icon">💰</div>
-              <div class="metric-content">
-                <h3 class="metric-title">Total Revenue</h3>
-                <div class="metric-value" data-prefix="\$" data-count="4104000">0</div>
-                <div class="metric-change positive">
-                  <i class="fas fa-arrow-up"></i>
-                  <span>+470% YoY</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="metric-icon">📊</div>
-              <div class="metric-content">
-                <h3 class="metric-title">MRR</h3>
-                <div class="metric-value" data-prefix="\$" data-count="342000">0</div>
-                <div class="metric-change positive">
-                  <i class="fas fa-arrow-up"></i>
-                  <span>+18% MoM</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
-              <div class="metric-icon">🎯</div>
-              <div class="metric-content">
-                <h3 class="metric-title">Avg Retention</h3>
-                <div class="metric-value" data-suffix="%" data-count="56">0</div>
-                <div class="metric-change positive">
-                  <i class="fas fa-arrow-up"></i>
-                  <span>+8% YoY</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Charts Grid -->
-          <div class="metrics-charts">
-            <!-- Revenue Growth Chart -->
-            <div class="chart-container" data-aos="fade-up" data-aos-delay="400">
-              <div class="chart-header">
-                <h3 class="chart-title">Revenue Growth</h3>
-                <div class="chart-actions">
-                  <button class="chart-btn active" data-period="year">Year</button>
-                  <button class="chart-btn" data-period="quarter">Quarter</button>
-                  <button class="chart-btn" data-period="month">Month</button>
-                </div>
-              </div>
-              <div class="chart-wrapper">
-                <canvas id="revenueChart"></canvas>
-              </div>
-            </div>
-            
-            <!-- User Growth Chart -->
-            <div class="chart-container" data-aos="fade-up" data-aos-delay="500">
-              <div class="chart-header">
-                <h3 class="chart-title">User Growth</h3>
-                <div class="chart-actions">
-                  <button class="chart-btn active" data-period="year">Year</button>
-                  <button class="chart-btn" data-period="quarter">Quarter</button>
-                </div>
-              </div>
-              <div class="chart-wrapper">
-                <canvas id="userGrowthChart"></canvas>
-              </div>
-            </div>
-            
-            <!-- Product Performance Chart -->
-            <div class="chart-container full-width" data-aos="fade-up" data-aos-delay="600">
-              <div class="chart-header">
-                <h3 class="chart-title">Product Performance</h3>
-                <div class="chart-actions">
-                  <button class="chart-btn active" data-metric="revenue">Revenue</button>
-                  <button class="chart-btn" data-metric="users">Users</button>
-                </div>
-              </div>
-              <div class="chart-wrapper">
-                <canvas id="productChart"></canvas>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Product Breakdown -->
-          <div class="product-breakdown" data-aos="fade-up">
-            <h3 class="breakdown-title">Product Breakdown</h3>
-            <div class="breakdown-grid">
-              <div class="breakdown-item">
-                <div class="breakdown-header">
-                  <span class="product-name">POS Ultimate</span>
-                  <span class="product-mrr">\$85K</span>
-                </div>
-                <div class="breakdown-bar">
-                  <div class="breakdown-progress" style="width: 33%"></div>
-                </div>
-                <div class="breakdown-stats">
-                  <span>450 businesses</span>
-                  <span>2.5M transactions</span>
-                </div>
-              </div>
-              
-              <div class="breakdown-item">
-                <div class="breakdown-header">
-                  <span class="product-name">Casino App</span>
-                  <span class="product-mrr">\$125K</span>
-                </div>
-                <div class="breakdown-bar">
-                  <div class="breakdown-progress" style="width: 49%"></div>
-                </div>
-                <div class="breakdown-stats">
-                  <span>125K users</span>
-                  <span>45K DAU</span>
-                </div>
-              </div>
-              
-              <div class="breakdown-item">
-                <div class="breakdown-header">
-                  <span class="product-name">Social Dashboard</span>
-                  <span class="product-mrr">\$12K</span>
-                </div>
-                <div class="breakdown-bar">
-                  <div class="breakdown-progress" style="width: 5%"></div>
-                </div>
-                <div class="breakdown-stats">
-                  <span>15K users</span>
-                  <span>3.2K DAU</span>
-                </div>
-              </div>
-              
-              <div class="breakdown-item">
-                <div class="breakdown-header">
-                  <span class="product-name">Job Portal</span>
-                  <span class="product-mrr">\$18K</span>
-                </div>
-                <div class="breakdown-bar">
-                  <div class="breakdown-progress" style="width: 7%"></div>
-                </div>
-                <div class="breakdown-stats">
-                  <span>35K users</span>
-                  <span>12K jobs</span>
-                </div>
-              </div>
-              
-              <div class="breakdown-item">
-                <div class="breakdown-header">
-                  <span class="product-name">Other Products</span>
-                  <span class="product-mrr">\$102K</span>
-                </div>
-                <div class="breakdown-bar">
-                  <div class="breakdown-progress" style="width: 40%"></div>
-                </div>
-                <div class="breakdown-stats">
-                  <span>8 products</span>
-                  <span>308K users</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- ============================================
-         CERTIFICATES SECTION
-         ============================================ -->
-    <section id="certificates" class="section certificates-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-label">Achievements</span>
-          <h2 class="section-title">Certificates & <span class="text-gradient">Awards</span></h2>
-          <p class="section-description">
-            82+ technical certifications across 9 major domains from Programming Hub
-          </p>
-        </div>
-        
-        <!-- Certificates Stats -->
-        <div class="certificates-stats" data-aos="fade-up">
-          <div class="cert-stat">
-            <div class="cert-number" data-count="82">0</div>
-            <div class="cert-label">Total Certificates</div>
-          </div>
-          <div class="cert-stat">
-            <div class="cert-number" data-count="9">0</div>
-            <div class="cert-label">Domains Covered</div>
-          </div>
-          <div class="cert-stat">
-            <div class="cert-number" data-count="450">0</div>
-            <div class="cert-label">Hours Learned</div>
-          </div>
-          <div class="cert-stat">
-            <div class="cert-number" data-count="100">0</div>
-            <div class="cert-label">% Completion</div>
-          </div>
-        </div>
-        
-        <!-- Certificates Categories -->
-        <div class="certificates-tabs" data-aos="fade-up">
-          <button class="tab-btn active" data-category="all">
-            <i class="fas fa-globe"></i>
-            <span>All</span>
-          </button>
-          <button class="tab-btn" data-category="programming">
-            <i class="fas fa-code"></i>
-            <span>Programming</span>
-          </button>
-          <button class="tab-btn" data-category="web">
-            <i class="fas fa-laptop-code"></i>
-            <span>Web Development</span>
-          </button>
-          <button class="tab-btn" data-category="mobile">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Mobile Development</span>
-          </button>
-          <button class="tab-btn" data-category="ai">
-            <i class="fas fa-brain"></i>
-            <span>AI & ML</span>
-          </button>
-          <button class="tab-btn" data-category="data">
-            <i class="fas fa-database"></i>
-            <span>Data Science</span>
-          </button>
-          <button class="tab-btn" data-category="security">
-            <i class="fas fa-shield-alt"></i>
-            <span>Cyber Security</span>
-          </button>
-          <button class="tab-btn" data-category="blockchain">
-            <i class="fas fa-link"></i>
-            <span>Blockchain</span>
-          </button>
-          <button class="tab-btn" data-category="cloud">
-            <i class="fas fa-cloud"></i>
-            <span>Cloud Computing</span>
-          </button>
-          <button class="tab-btn" data-category="marketing">
-            <i class="fas fa-bullhorn"></i>
-            <span>Marketing</span>
-          </button>
-        </div>
-        
-        <!-- Certificates Grid -->
-        <div class="certificates-grid">
-          <!-- Programming Category -->
-          <div class="certificate-card" data-category="programming" data-aos="fade-up" data-aos-delay="0">
-            <div class="cert-header">
-              <div class="cert-icon">🐍</div>
-              <h3 class="cert-title">Python Programming</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Dec 2023</span>
-                <span class="cert-hours">16 hours</span>
-              </div>
-              <p class="cert-description">
-                Comprehensive Python programming covering fundamentals, OOP, data structures, and advanced topics.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">Python Basics</span>
-                <span class="skill-tag">OOP</span>
-                <span class="skill-tag">Data Structures</span>
-                <span class="skill-tag">File Handling</span>
-                <span class="skill-tag">Error Handling</span>
-                <span class="skill-tag">Modules</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1702923456700" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <div class="certificate-card" data-category="programming" data-aos="fade-up" data-aos-delay="50">
-            <div class="cert-header">
-              <div class="cert-icon">☕</div>
-              <h3 class="cert-title">Java Programming</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Dec 2023</span>
-                <span class="cert-hours">18 hours</span>
-              </div>
-              <p class="cert-description">
-                Advanced Java programming including OOP, collections, multithreading, and design patterns.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">Java Core</span>
-                <span class="skill-tag">OOP</span>
-                <span class="skill-tag">Collections</span>
-                <span class="skill-tag">Multithreading</span>
-                <span class="skill-tag">Design Patterns</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1703012345600" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <div class="certificate-card" data-category="programming" data-aos="fade-up" data-aos-delay="100">
-            <div class="cert-header">
-              <div class="cert-icon">🤖</div>
-              <h3 class="cert-title">Kotlin Programming</h3>
-              <div class="cert-level expert">Expert</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Jan 2024</span>
-                <span class="cert-hours">14 hours</span>
-              </div>
-              <p class="cert-description">
-                Modern Kotlin programming for Android development with coroutines, flows, and functional programming.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">Kotlin Basics</span>
-                <span class="skill-tag">Coroutines</span>
-                <span class="skill-tag">Flows</span>
-                <span class="skill-tag">Functional Programming</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1704190123400" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Web Development Category -->
-          <div class="certificate-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
-            <div class="cert-header">
-              <div class="cert-icon">⚛️</div>
-              <h3 class="cert-title">React Development</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Dec 2023</span>
-                <span class="cert-hours">20 hours</span>
-              </div>
-              <p class="cert-description">
-                Modern React development with hooks, context API, Redux, and Next.js for production applications.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">React Hooks</span>
-                <span class="skill-tag">Context API</span>
-                <span class="skill-tag">Redux</span>
-                <span class="skill-tag">Next.js</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1702756789000" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <div class="certificate-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
-            <div class="cert-header">
-              <div class="cert-icon">💚</div>
-              <h3 class="cert-title">Vue.js Development</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Dec 2023</span>
-                <span class="cert-hours">18 hours</span>
-              </div>
-              <p class="cert-description">
-                Vue.js 3 with Composition API, Vuex, Vue Router, and Nuxt.js for modern web applications.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">Vue 3</span>
-                <span class="skill-tag">Composition API</span>
-                <span class="skill-tag">Vuex</span>
-                <span class="skill-tag">Nuxt.js</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1702845678900" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- AI & ML Category -->
-          <div class="certificate-card" data-category="ai" data-aos="fade-up" data-aos-delay="250">
-            <div class="cert-header">
-              <div class="cert-icon">🤖</div>
-              <h3 class="cert-title">Machine Learning</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Jan 2024</span>
-                <span class="cert-hours">22 hours</span>
-              </div>
-              <p class="cert-description">
-                Machine learning fundamentals with Python, scikit-learn, TensorFlow, and practical projects.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">Python ML</span>
-                <span class="skill-tag">scikit-learn</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">Neural Networks</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1704278901200" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <div class="certificate-card" data-category="ai" data-aos="fade-up" data-aos-delay="300">
-            <div class="cert-header">
-              <div class="cert-icon">🧠</div>
-              <h3 class="cert-title">Deep Learning</h3>
-              <div class="cert-level advanced">Advanced</div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-meta">
-                <span class="cert-date">Jan 2024</span>
-                <span class="cert-hours">20 hours</span>
-              </div>
-              <p class="cert-description">
-                Deep learning with PyTorch, CNNs, RNNs, transformers, and computer vision applications.
-              </p>
-              <div class="cert-skills">
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">CNNs</span>
-                <span class="skill-tag">RNNs</span>
-                <span class="skill-tag">Transformers</span>
-              </div>
-            </div>
-            <div class="cert-footer">
-              <a href="https://www.programminghub.io/certificate?id=1704367890100" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                <i class="fas fa-external-link-alt"></i>
-                <span>Verify</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- More certificates... (82 total) -->
-        </div>
-        
-        <!-- View All Certificates -->
-        <div class="certificates-cta" data-aos="fade-up">
-          <a href="/certificates" class="btn btn-primary">
-            <i class="fas fa-certificate"></i>
-            <span>View All 82 Certificates</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- ============================================
-         EXPERIENCE SECTION
-         ============================================ -->
+    <!-- Experience -->
     <section id="experience" class="section experience-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
+
+        <div class="section-header">
           <span class="section-label">Career Path</span>
-          <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
-          <p class="section-description">
-            12+ years of professional experience building exceptional software
-          </p>
+
+          <h2 class="section-title">
+            Work
+            <span class="text-gradient">Experience</span>
+          </h2>
         </div>
-        
-        <!-- Timeline -->
+
         <div class="experience-timeline">
-          <!-- Current Role -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
-            <div class="timeline-marker">
-              <div class="marker-dot"></div>
-              <div class="marker-line"></div>
+
+          <article class="timeline-content">
+            <h3>Senior Android Developer</h3>
+
+            <p class="timeline-date">
+              2020 - Present
+            </p>
+
+            <p>
+              Developing Android applications, SaaS products, and technical
+              solutions for different business needs.
+            </p>
+
+            <div class="timeline-tech">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Compose</span>
+              <span class="tech-tag">Firebase</span>
             </div>
-            <div class="timeline-content">
-              <div class="timeline-badge current">Current</div>
-              <div class="timeline-header">
-                <h3 class="timeline-title">Senior Android Developer & Technical Founder</h3>
-                <div class="timeline-company">
-                  <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_3_zqrhhr.webp" alt="Freelance" class="company-logo">
-                  <span>Freelance / Self-Employed</span>
-                </div>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-location">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Remote (Myanmar 🇲🇲 ↔ Thailand 🇹🇭)
-                </span>
-                <span class="timeline-date">
-                  <i class="fas fa-calendar"></i>
-                  Jan 2020 - Present (6 years 8 months)
-                </span>
-              </div>
-              <p class="timeline-description">
-                Building and scaling multiple SaaS products and mobile applications. Specializing in Android development, startup MVPs, and technical consulting.
-              </p>
-              <ul class="timeline-responsibilities">
-                <li>Founded and scaled 12+ startup ventures with combined \$255K MRR</li>
-                <li>Built 40+ production applications across Android, iOS, and Web</li>
-                <li>Consulted for 25+ clients on mobile architecture and technical strategy</li>
-                <li>Mentored 15+ junior developers through open source and community</li>
-                <li>Achieved 82+ technical certifications across 9 domains</li>
-              </ul>
-              <div class="timeline-tech">
-                <span class="tech-tag">Kotlin</span>
-                <span class="tech-tag">Jetpack Compose</span>
-                <span class="tech-tag">Android SDK</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">React</span>
-              </div>
+          </article>
+
+          <article class="timeline-content">
+            <h3>Android Developer</h3>
+
+            <p class="timeline-date">
+              2014 - 2020
+            </p>
+
+            <p>
+              Built mobile applications for business, e-commerce, and
+              service-based products.
+            </p>
+
+            <div class="timeline-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Android SDK</span>
+              <span class="tech-tag">REST API</span>
             </div>
-          </div>
-          
-          <!-- Previous Role 1 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="timeline-marker">
-              <div class="marker-dot"></div>
-              <div class="marker-line"></div>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3 class="timeline-title">Lead Android Developer</h3>
-                <div class="timeline-company">
-                  <span>Tech Startup (Bangkok)</span>
-                </div>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-location">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Bangkok, Thailand 🇹🇭
-                </span>
-                <span class="timeline-date">
-                  <i class="fas fa-calendar"></i>
-                  Jun 2018 - Dec 2019 (1 year 7 months)
-                </span>
-              </div>
-              <p class="timeline-description">
-                Led Android development for fintech startup. Built payment processing app from ground up, integrated with multiple payment gateways and banking APIs.
-              </p>
-              <ul class="timeline-responsibilities">
-                <li>Led team of 4 Android developers</li>
-                <li>Architected multi-module Android application with Clean Architecture</li>
-                <li>Integrated Stripe, PayPal, and local Thai payment gateways</li>
-                <li>Implemented biometric authentication and encryption</li>
-                <li>Launched app to 50K+ users in first 6 months</li>
-              </ul>
-              <div class="timeline-tech">
-                <span class="tech-tag">Kotlin</span>
-                <span class="tech-tag">Android SDK</span>
-                <span class="tech-tag">RxJava</span>
-                <span class="tech-tag">Dagger</span>
-                <span class="tech-tag">MVVM</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Previous Role 2 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="timeline-marker">
-              <div class="marker-dot"></div>
-              <div class="marker-line"></div>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3 class="timeline-title">Senior Android Developer</h3>
-                <div class="timeline-company">
-                  <span>Mobile Development Agency</span>
-                </div>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-location">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Yangon, Myanmar 🇲🇲
-                </span>
-                <span class="timeline-date">
-                  <i class="fas fa-calendar"></i>
-                  Mar 2016 - May 2018 (2 years 3 months)
-                </span>
-              </div>
-              <p class="timeline-description">
-                Developed custom Android applications for enterprise clients across e-commerce, healthcare, and logistics sectors.
-              </p>
-              <ul class="timeline-responsibilities">
-                <li>Delivered 18 client projects on time and within budget</li>
-                <li>Built e-commerce app with 100K+ MAU</li>
-                <li>Developed healthcare app for hospital management</li>
-                <li>Created logistics tracking system for delivery company</li>
-                <li>Mentored 3 junior developers</li>
-              </ul>
-              <div class="timeline-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Android SDK</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">Retrofit</span>
-                <span class="tech-tag">MVP</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Previous Role 3 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="timeline-marker">
-              <div class="marker-dot"></div>
-              <div class="marker-line"></div>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3 class="timeline-title">Android Developer</h3>
-                <div class="timeline-company">
-                  <span>Software Company</span>
-                </div>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-location">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Yangon, Myanmar 🇲🇲
-                </span>
-                <span class="timeline-date">
-                  <i class="fas fa-calendar"></i>
-                  Jun 2014 - Feb 2016 (1 year 9 months)
-                </span>
-              </div>
-              <p class="timeline-description">
-                Developed Android applications for local businesses and government organizations.
-              </p>
-              <ul class="timeline-responsibilities">
-                <li>Built 12 Android applications for various clients</li>
-                <li>Integrated with government databases and APIs</li>
-                <li>Developed custom UI/UX for each client</li>
-                <li>First Android app for Myanmar government department</li>
-              </ul>
-              <div class="timeline-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Android SDK</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">REST APIs</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Education -->
-        <div class="education-section" data-aos="fade-up">
-          <h3 class="section-subtitle">Education</h3>
-          <div class="education-grid">
-            <div class="education-card">
-              <div class="education-header">
-                <h4 class="education-degree">Bachelor of Computer Science</h4>
-                <div class="education-school">Computer University, Yangon</div>
-              </div>
-              <div class="education-meta">
-                <span class="education-year">2010 - 2014</span>
-                <span class="education-gpa">GPA: 3.8/4.0</span>
-              </div>
-              <div class="education-achievements">
-                <span class="achievement">Dean's List (6 semesters)</span>
-                <span class="achievement">Programming Club President</span>
-                <span class="achievement">Hackathon Winner (2013)</span>
-              </div>
-            </div>
-            
-            <div class="education-card">
-              <div class="education-header">
-                <h4 class="education-degree">Android Developer Certification</h4>
-                <div class="education-school">Google Developers Launchpad</div>
-              </div>
-              <div class="education-meta">
-                <span class="education-year">2017</span>
-                <span class="education-honors">Top 10% of cohort</span>
-              </div>
-              <p class="education-description">
-                Intensive 6-month Android development bootcamp covering advanced topics.
-              </p>
-            </div>
-          </div>
+          </article>
+
         </div>
       </div>
     </section>
-    
-    <!-- ============================================
-         CONTACT SECTION
-         ============================================ -->
+
+    <!-- Metrics -->
+    <section id="metrics" class="section metrics-section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-label">Performance</span>
+
+          <h2 class="section-title">
+            Growth
+            <span class="text-gradient">Metrics</span>
+          </h2>
+        </div>
+
+        <div class="metrics-charts">
+
+          <div class="chart-container">
+            <h3>Revenue Growth</h3>
+            <div class="chart-wrapper">
+              <canvas id="revenueChart"></canvas>
+            </div>
+          </div>
+
+          <div class="chart-container">
+            <h3>User Growth</h3>
+            <div class="chart-wrapper">
+              <canvas id="userGrowthChart"></canvas>
+            </div>
+          </div>
+
+          <div class="chart-container full-width">
+            <h3>Product Performance</h3>
+            <div class="chart-wrapper">
+              <canvas id="productChart"></canvas>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section contact-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
+
+        <div class="section-header">
           <span class="section-label">Get In Touch</span>
-          <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
-          <p class="section-description">
-            Have a project in mind? Let's discuss how I can help bring your ideas to life.
-          </p>
+
+          <h2 class="section-title">
+            Let's Work
+            <span class="text-gradient">Together</span>
+          </h2>
         </div>
-        
-        <!-- Contact Grid -->
+
         <div class="contact-grid">
-          <!-- Contact Info -->
-          <div class="contact-info" data-aos="fade-right">
+
+          <div class="contact-info">
             <div class="info-card">
-              <div class="info-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info-content">
-                <h4 class="info-title">Email</h4>
-                <a href="mailto:moekyawaung@programmer.net" class="info-link">moekyawaung@programmer.net</a>
-                <p class="info-text">I'll respond within 24 hours</p>
-              </div>
-            </div>
-            
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="info-content">
-                <h4 class="info-title">Phone</h4>
-                <a href="tel:+959889000889" class="info-link">+95 9 889 000 889</a>
-                <p class="info-text">Available 9 AM - 6 PM (MMT)</p>
-              </div>
-            </div>
-            
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4 class="info-title">Location</h4>
-                <div class="info-text">Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭</div>
-                <p class="info-text">Remote work available</p>
-              </div>
-            </div>
-            
-            <!-- Social Links -->
-            <div class="contact-social">
-              <h4 class="social-title">Follow Me</h4>
-              <div class="social-links">
-                <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener" class="social-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" target="_blank" rel="noopener" class="social-link">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener" class="social-link">
-                  <i class="fas fa-grin"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" target="_blank" rel="noopener" class="social-link">
-                  <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://bsky.app/profile/moekyawaung96.bsky.social" target="_blank" rel="noopener" class="social-link">
-                  <i class="fas fa-cloud"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Contact Form -->
-          <div class="contact-form-wrapper" data-aos="fade-left">
-            <form id="contact-form" class="contact-form">
-              <div class="form-group">
-                <label for="name" class="form-label">Your Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  class="form-input" 
-                  placeholder="John Doe"
-                  required
-                >
-              </div>
-              
-              <div class="form-group">
-                <label for="email" class="form-label">Your Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  class="form-input" 
-                  placeholder="john@example.com"
-                  required
-                >
-              </div>
-              
-              <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input 
-                  type="text" 
-                  id="subject" 
-                  name="subject" 
-                  class="form-input" 
-                  placeholder="Project Inquiry"
-                  required
-                >
-              </div>
-              
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  class="form-textarea" 
-                  rows="6"
-                  placeholder="Tell me about your project..."
-                  required
-                ></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn-primary btn-full">
-                <i class="fas fa-paper-plane"></i>
-                <span>Send Message</span>
-              </button>
-              
-              <p class="form-note">
-                <i class="fas fa-shield-alt"></i>
-                Your information is secure. I never share personal data.
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  </main>
-  
-  <!-- ============================================
-       FOOTER (Complete)
-       ============================================ -->
-  <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-text">
-              <span class="logo-m">M</span>
-              <span class="logo-ka">KA</span>
-            </span>
-          </div>
-          <p class="footer-description">
-            Senior Android Developer & Technical Founder building exceptional mobile experiences with Kotlin, Jetpack Compose & Modern Architecture.
-          </p>
-          <div class="footer-social">
-            <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener" aria-label="Gravatar">
-              <i class="fas fa-grin"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" target="_blank" rel="noopener" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Quick Links -->
-        <div class="footer-links">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#startups">Startups</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#blog">Blog</a></li>
-          </ul>
-        </div>
-        
-        <!-- Contact -->
-        <div class="footer-contact">
-          <h4 class="footer-title">Contact</h4>
-          <ul>
-            <li>
               <i class="fas fa-envelope"></i>
-              <a href="mailto:moekyawaung@programmer.net">moekyawaung@programmer.net</a>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+959889000889">+95 9 889 000 889</a>
-            </li>
-            <li>
+              <h3>Email</h3>
+              <a href="mailto:moekyawaung@programmer.net">
+                moekyawaung@programmer.net
+              </a>
+            </div>
+
+            <div class="info-card">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭</span>
-            </li>
-          </ul>
-        </div>
-        
-        <!-- Newsletter -->
-        <div class="footer-newsletter">
-          <h4 class="footer-title">Stay Updated</h4>
-          <p>Subscribe to my newsletter for the latest updates.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">
+              <h3>Location</h3>
+              <p>Myanmar / Thailand</p>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                type="text"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                type="email"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                class="form-input"
+                type="text"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit">
               <i class="fas fa-paper-plane"></i>
+              Send Message
             </button>
+
           </form>
         </div>
       </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Moe Kyaw Aung. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <p>
+        © 2026 Moe Kyaw Aung. All rights reserved.
+      </p>
+
+      <div class="footer-social">
+        <a
+          href="https://github.com/Dev-moe-kyawaung"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a
+          href="mailto:moekyawaung@programmer.net"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
+
     </div>
   </footer>
-  
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+
+  <!-- Back to top -->
+  <button
+    id="back-to-top"
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+  >
     <i class="fas fa-arrow-up"></i>
   </button>
 
-    
-    <!-- ============================================
-         MORE SECTIONS (Continued in next file)
-         ============================================ -->
-    
-    <!-- Note: Due to response length limits, remaining sections will be in separate files -->
-    <!-- Sections include: Startups, Metrics, Certificates, Experience, Blog, Contact, Footer -->
-    
-  </main>
-  
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
-  <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-text">MKA</span>
-          </div>
-          <p class="footer-description">
-            Senior Android Developer & Technical Founder building exceptional mobile experiences with Kotlin, Jetpack Compose & Modern Architecture.
-          </p>
-          <div class="footer-social">
-            <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener" aria-label="Gravatar">
-              <i class="fas fa-grin"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" target="_blank" rel="noopener" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Quick Links -->
-        <div class="footer-links">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#startups">Startups</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#blog">Blog</a></li>
-          </ul>
-        </div>
-        
-        <!-- Contact -->
-        <div class="footer-contact">
-          <h4 class="footer-title">Contact</h4>
-          <ul>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:moekyawaung@programmer.net">moekyawaung@programmer.net</a>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+959889000889">+95 9 889 000 889</a>
-            </li>
-            <li>
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭</span>
-            </li>
-          </ul>
-        </div>
-        
-        <!-- Newsletter -->
-        <div class="footer-newsletter">
-          <h4 class="footer-title">Stay Updated</h4>
-          <p>Subscribe to my newsletter for the latest updates.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Moe Kyaw Aung. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!-- ============================================
-       SCRIPTS
-       ============================================ -->
-  
-  <!-- Particle.js -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <!-- Animate On Scroll (AOS) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
-  
-  <!-- GSAP (GreenSock Animation Platform) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  
-  <!-- Typed.js (Typing Animation) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-  
-  <!-- Chart.js (Metrics Charts) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-  
-  <!-- Main Application Script -->
-  <script type="module" src="/assets/js/main.js"></script>
-  
-  <!-- Service Worker Registration -->
+  <!-- Service worker -->
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            console.log('SW registered:', registration);
+      window.addEventListener('load', function () {
+        navigator.serviceWorker
+          .register('./sw.js')
+          .then(function () {
+            console.log('Service worker registered');
           })
-          .catch(error => {
-            console.log('SW registration failed:', error);
+          .catch(function (error) {
+            console.warn('Service worker registration failed:', error);
           });
       });
     }
   </script>
-  
-  <!-- Performance: Preload critical resources -->
-  <link rel="preload" href="/assets/js/main.js" as="script">
-  <link rel="preload" href="/assets/css/main.css" as="style">
-  
-  <!-- Google Analytics (Privacy-friendly) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID', {
-      anonymize_ip: true,
-      send_page_view: false
-    });
-  </script>
+
 </body>
 </html>
