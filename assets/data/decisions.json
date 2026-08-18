@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "total": 156,
+    "lastUpdated": "2026-08-18",
+    "categories": ["Architecture", "Technology", "Product", "Business", "Design", "Security"]
+  },
+  "decisions": [
+    {
+      "id": 1,
+      "projectId": "social-dashboard",
+      "title": "Chose Vue 3 over React",
+      "category": "Technology",
+      "date": "2026-01-15",
+      "status": "completed",
+      "context": "Team needed to build MVP quickly for social analytics dashboard. Team had more Vue experience than React.",
+      "decision": "Selected Vue 3 with Composition API over React 18",
+      "rationale": [
+        "Team familiarity with Vue ecosystem",
+        "Faster development cycle for MVP",
+        "Vue 3 Composition API provides similar benefits to React hooks",
+        "Better TypeScript integration in Vue 3"
+      ],
+      "alternatives": [
+        "React 18 with hooks",
+        "Svelte",
+        "Angular 16"
+      ],
+      "outcome": "Reduced development time by 40%, MVP delivered 2 weeks early",
+      "lessons": "Team velocity matters more than technology hype for early-stage products",
+      "impact": {
+        "time": "+40% faster",
+        "cost": "-25% budget",
+        "quality": "Maintained"
+      },
+      "metrics": {
+        "developmentTime": "6 weeks vs 10 weeks estimated",
+        "bugs": 12,
+        "performance": "95 Lighthouse score"
+      }
+    },
+    {
+      "id": 2,
+      "projectId": "social-dashboard",
+      "title": "MongoDB vs PostgreSQL",
+      "category": "Architecture",
+      "date": "2026-01-18",
+      "status": "completed",
+      "context": "Needed to store evolving analytics data from multiple social platforms with varying schemas.",
+      "decision": "Selected MongoDB over PostgreSQL",
+      "rationale": [
+        "Flexible schema for evolving data models",
+        "JSON-native storage matches API responses",
+        "Easier horizontal scaling for time-series data",
+        "Faster iteration on data structure"
+      ],
+      "alternatives": [
+        "PostgreSQL with JSONB",
+        "TimescaleDB",
+        "DynamoDB"
+      ],
+      "outcome": "Enabled rapid iteration on data models without migration overhead",
+      "lessons": "Schema flexibility is critical when integrating with multiple external APIs",
+      "impact": {
+        "developmentSpeed": "+50%",
+        "maintenance": "-30%",
+        "scalability": "Excellent"
+      }
+    },
+    {
+      "id": 3,
+      "projectId": "pos-ultimate-pro-max",
+      "title": "Multi-tenant Architecture",
+      "category": "Architecture",
+      "date": "2025-06-15",
+      "status": "completed",
+      "context": "Building enterprise POS system for multiple business locations with data isolation requirements.",
+      "decision": "Implemented multi-tenant architecture with database-per-tenant",
+      "rationale": [
+        "Data isolation for security compliance",
+        "Independent scaling per tenant",
+        "Easier backup and restore",
+        "Custom pricing tiers per tenant"
+      ],
+      "alternatives": [
+        "Single database with tenant_id",
+        "Hybrid approach",
+        "Schema-per-tenant"
+      ],
+      "outcome": "Achieved 99.97% uptime, passed SOC 2 audit",
+      "lessons": "Database-per-tenant adds operational complexity but provides better isolation",
+      "impact": {
+        "security": "SOC 2 compliant",
+        "scalability": "1000+ tenants supported",
+        "cost": "+20% infrastructure"
+      }
+    },
+    {
+      "id": 4,
+      "projectId": "pos-ultimate-pro-max",
+      "title": "Offline-First Design",
+      "category": "Product",
+      "date": "2025-07-01",
+      "status": "completed",
+      "context": "POS systems must work during internet outages to avoid business disruption.",
+      "decision": "Implemented offline-first architecture with local database sync",
+      "rationale": [
+        "Businesses cannot stop during internet outages",
+        "Local SQLite database for transactions",
+        "Background sync when connection restored",
+        "Conflict resolution strategies"
+      ],
+      "alternatives": [
+        "Online-only with caching",
+        "Hybrid approach",
+        "PWA with service workers"
+      ],
+      "outcome": "Zero downtime during internet outages, 99.97% uptime achieved",
+      "lessons": "Offline-first is essential for critical business applications",
+      "impact": {
+        "reliability": "99.97% uptime",
+        "customerSatisfaction": "+45%",
+        "complexity": "+30%"
+      }
+    },
+    {
+      "id": 5,
+      "projectId": "casino-app",
+      "title": "Virtual Currency vs Real Money",
+      "category": "Business",
+      "date": "2025-07-15",
+      "status": "completed",
+      "context": "Deciding between real-money gambling app vs social casino with virtual currency.",
+      "decision": "Virtual currency only (no real money gambling)",
+      "rationale": [
+        "Avoid gambling licenses and regulations",
+        "Global market access",
+        "Lower legal risk",
+        "Easier app store approval"
+      ],
+      "alternatives": [
+        "Real money gambling",
+        "Hybrid model",
+        "Crypto-based"
+      ],
+      "outcome": "Launched in 150+ countries, no legal issues",
+      "lessons": "Virtual currency model enables global scale without regulatory burden",
+      "impact": {
+        "marketAccess": "150+ countries",
+        "revenue": "\$125K MRR",
+        "legalRisk": "Minimal"
+      }
+    },
+    {
+      "id": 6,
+      "projectId": "pwa-app",
+      "title": "Service Worker Strategy",
+      "category": "Technology",
+      "date": "2026-02-01",
+      "status": "completed",
+      "context": "Needed to implement offline support and caching for PWA.",
+      "decision": "Cache-first strategy with network fallback",
+      "rationale": [
+        "Faster load times for returning users",
+        "Offline support for critical features",
+        "Reduced server load",
+        "Better user experience"
+      ],
+      "alternatives": [
+        "Network-first",
+        "Stale-while-revalidate",
+        "Cache-only"
+      ],
+      "outcome": "Lighthouse score 98, 65% offline usage",
+      "lessons": "Cache-first provides best UX for content-heavy PWAs",
+      "impact": {
+        "performance": "98 Lighthouse",
+        "offlineUsage": "65%",
+        "serverLoad": "-40%"
+      }
+    },
+    {
+      "id": 7,
+      "projectId": "job-portal-app",
+      "title": "AI-Powered Job Matching",
+      "category": "Product",
+      "date": "2026-03-15",
+      "status": "completed",
+      "context": "Job seekers overwhelmed by irrelevant listings, employers receive unqualified applications.",
+      "decision": "Implement AI-powered job matching using OpenAI API",
+      "rationale": [
+        "Better match quality for users",
+        "Higher application success rate",
+        "Competitive differentiation",
+        "Reduced time-to-hire"
+      ],
+      "alternatives": [
+        "Keyword-based matching",
+        "Rule-based system",
+        "Manual curation"
+      ],
+      "outcome": "2.5% application-to-hire rate (industry avg 1.2%)",
+      "lessons": "AI matching significantly improves user outcomes and engagement",
+      "impact": {
+        "matchQuality": "+85%",
+        "applicationSuccess": "+108%",
+        "userSatisfaction": "+62%"
+      }
+    },
+    {
+      "id": 8,
+      "projectId": "lens-lite",
+      "title": "WebGL vs Canvas API",
+      "category": "Technology",
+      "date": "2025-09-20",
+      "status": "completed",
+      "context": "Building image editor with real-time filters and effects.",
+      "decision": "WebGL for GPU-accelerated processing",
+      "rationale": [
+        "Real-time filter preview",
+        "GPU acceleration for large images",
+        "Better performance on mobile",
+        "Support for complex effects"
+      ],
+      "alternatives": [
+        "Canvas 2D API",
+        "CSS filters",
+        "WebAssembly"
+      ],
+      "outcome": "15ms filter application, 60fps preview",
+      "lessons": "WebGL essential for professional-grade image editing in browser",
+      "impact": {
+        "performance": "15ms per filter",
+        "fps": 60,
+        "maxImageSize": "50MP"
+      }
+    },
+    {
+      "id": 9,
+      "projectId": "video-player",
+      "title": "Custom Controls vs Native",
+      "category": "Design",
+      "date": "2025-11-25",
+      "status": "completed",
+      "context": "Building video player with custom UI requirements and analytics.",
+      "decision": "Custom HTML/CSS controls over native browser controls",
+      "rationale": [
+        "Full design customization",
+        "Analytics integration",
+        "Consistent cross-browser experience",
+        "Additional features (playlists, speed control)"
+      ],
+      "alternatives": [
+        "Native browser controls",
+        "Video.js library",
+        "Plyr"
+      ],
+      "outcome": "450K video plays, 72% completion rate",
+      "lessons": "Custom controls provide better UX and analytics but require more maintenance",
+      "impact": {
+        "customization": "100%",
+        "analytics": "Full tracking",
+        "developmentTime": "+40%"
+      }
+    },
+    {
+      "id": 10,
+      "projectId": "daily-planner-app",
+      "title": "Firebase vs Self-Hosted Backend",
+      "category": "Architecture",
+      "date": "2026-01-12",
+      "status": "completed",
+      "context": "Building productivity app with real-time sync across devices.",
+      "decision": "Firebase (Firestore + Auth + Functions)",
+      "rationale": [
+        "Real-time sync out of the box",
+        "No server management",
+        "Automatic scaling",
+        "Built-in authentication"
+      ],
+      "alternatives": [
+        "Node.js + PostgreSQL",
+        "Supabase",
+        "AWS Amplify"
+      ],
+      "outcome": "22K users, 11K DAU, zero downtime",
+      "lessons": "Firebase ideal for MVP and early-stage products with real-time requirements",
+      "impact": {
+        "developmentSpeed": "+60%",
+        "infrastructure": "Zero management",
+        "cost": "\$150/month at scale"
+      }
+    }
+  ],
+  "statistics": {
+    "byCategory": {
+      "Architecture": 45,
+      "Technology": 38,
+      "Product": 32,
+      "Business": 18,
+      "Design": 15,
+      "Security": 8
+    },
+    "byStatus": {
+      "completed": 142,
+      "in-progress": 12,
+      "reversed": 2
+    },
+    "avgImpact": {
+      "developmentSpeed": "+45%",
+      "cost": "-18%",
+      "quality": "+32%"
+    }
+  }
+}
