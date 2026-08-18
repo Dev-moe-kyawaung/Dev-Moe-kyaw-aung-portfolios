@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "total": 40,
+    "categories": ["Mobile", "Web", "PWA", "Game", "POS", "E-commerce", "Dashboard", "Utility"],
+    "lastUpdated": "2026-08-18T12:00:00Z"
+  },
+  "featured": [
+    {
+      "id": "social-dashboard",
+      "title": "Social Dashboard",
+      "slug": "social-dashboard",
+      "description": "Advanced social media analytics dashboard with real-time metrics, engagement tracking, and AI-powered insights.",
+      "longDescription": "A comprehensive social media management platform that aggregates data from multiple platforms (Instagram, Twitter, Facebook, TikTok) into a single unified dashboard. Features include real-time analytics, sentiment analysis, automated posting, and AI-driven content recommendations.",
+      "category": "Dashboard",
+      "tags": ["Vue.js", "Node.js", "MongoDB", "Socket.io", "Chart.js", "REST API"],
+      "techStack": {
+        "frontend": ["Vue 3", "Tailwind CSS", "Chart.js", "Pinia"],
+        "backend": ["Node.js", "Express", "MongoDB", "Redis"],
+        "devops": ["Docker", "GitHub Actions", "AWS EC2"],
+        "apis": ["Instagram Graph API", "Twitter API v2", "Facebook Graph API"]
+      },
+      "features": [
+        "Real-time analytics dashboard",
+        "Multi-platform integration",
+        "AI-powered sentiment analysis",
+        "Automated content scheduling",
+        "Engagement rate tracking",
+        "Competitor analysis",
+        "Custom report generation",
+        "Team collaboration tools"
+      ],
+      "metrics": {
+        "users": 15000,
+        "dailyActiveUsers": 3200,
+        "monthlyActiveUsers": 8500,
+        "retention30Day": 68,
+        "retention90Day": 45,
+        "revenue": "\$12,000 MRR",
+        "growth": "+15% MoM"
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/social-dashboard",
+        "stars": 245,
+        "forks": 67,
+        "issues": 12,
+        "pullRequests": 8,
+        "lastCommit": "2026-08-15",
+        "language": "JavaScript",
+        "size": "45.2 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/social-dashboard",
+        "video": "https://res.cloudinary.com/dye5qpwii/video/upload/v1778795856/copilot_image_1778795675037_heh9xk.png",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778747388/image-1_1_khsx9s.png",
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778747384/image-1_f6zlmk.jpg",
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778747384/image_1_buwgls.png"
+        ]
+      },
+      "timeline": {
+        "started": "2026-01-15",
+        "mvp": "2026-02-01",
+        "launched": "2026-03-15",
+        "iterations": 12
+      },
+      "decisions": [
+        {
+          "id": 1,
+          "title": "Chose Vue 3 over React",
+          "rationale": "Team familiarity and faster development cycle for MVP",
+          "outcome": "Reduced development time by 40%",
+          "date": "2026-01-15"
+        },
+        {
+          "id": 2,
+          "title": "MongoDB vs PostgreSQL",
+          "rationale": "Flexible schema for evolving analytics data structure",
+          "outcome": "Enabled rapid iteration on data models",
+          "date": "2026-01-18"
+        }
+      ],
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "pwa-app",
+      "title": "PWA App",
+      "slug": "pwa-app",
+      "description": "Progressive Web App with offline-first architecture, push notifications, and installable experience.",
+      "longDescription": "A production-ready PWA demonstrating modern web capabilities including offline support, background sync, push notifications, and app-like experience. Built with service workers, workbox, and modern web APIs.",
+      "category": "PWA",
+      "tags": ["PWA", "Service Worker", "Workbox", "IndexedDB", "Push API"],
+      "techStack": {
+        "frontend": ["HTML5", "CSS3", "Vanilla JS", "Workbox"],
+        "backend": ["Firebase", "Cloud Functions"],
+        "devops": ["GitHub Actions", "Netlify"],
+        "apis": ["Push API", "Notification API", "Cache API"]
+      },
+      "features": [
+        "Offline-first architecture",
+        "Background sync",
+        "Push notifications",
+        "Add to home screen",
+        "App shell model",
+        "Lazy loading",
+        "Image optimization",
+        "Performance monitoring"
+      ],
+      "metrics": {
+        "users": 8500,
+        "installRate": 42,
+        "offlineUsage": 65,
+        "lighthouse": 98,
+        "fcp": "0.8s",
+        "lcp": "1.2s",
+        "tti": "1.5s"
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/pwa-app",
+        "stars": 189,
+        "forks": 45,
+        "issues": 8,
+        "pullRequests": 5,
+        "lastCommit": "2026-08-10",
+        "language": "JavaScript",
+        "size": "12.8 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/pwa-app",
+        "video": null,
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp",
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763531/MKA_12_iv8kpm.webp"
+        ]
+      },
+      "timeline": {
+        "started": "2026-02-01",
+        "mvp": "2026-02-15",
+        "launched": "2026-03-01",
+        "iterations": 8
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "video-player",
+      "title": "Video Player",
+      "slug": "video-player",
+      "description": "Advanced HTML5 video player with custom controls, playlists, subtitles, and analytics.",
+      "longDescription": "A feature-rich video player built from scratch using HTML5 Video API. Includes custom UI controls, playlist management, subtitle support, playback speed control, picture-in-picture mode, and viewing analytics.",
+      "category": "Media",
+      "tags": ["HTML5", "JavaScript", "CSS3", "Video API", "Media Session"],
+      "techStack": {
+        "frontend": ["HTML5", "CSS3", "Vanilla JS"],
+        "backend": ["Cloudinary", "CDN"],
+        "apis": ["Media Session API", "Picture-in-Picture API"]
+      },
+      "features": [
+        "Custom video controls",
+        "Playlist management",
+        "Subtitle/caption support",
+        "Playback speed control (0.5x - 3x)",
+        "Picture-in-picture mode",
+        "Keyboard shortcuts",
+        "Viewing analytics",
+        "Responsive design",
+        "Media session integration"
+      ],
+      "metrics": {
+        "users": 12000,
+        "videoPlays": 450000,
+        "avgWatchTime": "8m 32s",
+        "completionRate": 72
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/video-player",
+        "stars": 312,
+        "forks": 89,
+        "issues": 15,
+        "pullRequests": 11,
+        "lastCommit": "2026-08-12",
+        "language": "JavaScript",
+        "size": "8.5 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/video-player",
+        "video": "https://res.cloudinary.com/dye5qpwii/video/upload/v1779052704/Javier_Pardina_10_ay7iai.mp4",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795825/cloud-icon-poster-1_2_opl7sy.png"
+        ]
+      },
+      "timeline": {
+        "started": "2025-11-20",
+        "mvp": "2025-12-10",
+        "launched": "2026-01-05",
+        "iterations": 15
+      },
+      "status": "active",
+      "visibility": "public"
+    }
+  ],
+  "all": [
+    {
+      "id": "game-collection",
+      "title": "Game Collection",
+      "slug": "game-collection",
+      "description": "Collection of classic arcade games rebuilt with modern web technologies.",
+      "category": "Game",
+      "tags": ["Canvas", "JavaScript", "Game Development", "Arcade"],
+      "techStack": {
+        "frontend": ["HTML5 Canvas", "JavaScript", "CSS3"],
+        "backend": ["Firebase"],
+        "apis": ["Gamepad API", "Fullscreen API"]
+      },
+      "features": [
+        "Multiple classic games (Snake, Tetris, Pac-Man)",
+        "High score tracking",
+        "Leaderboards",
+        "Responsive controls",
+        "Touch support",
+        "Sound effects",
+        "Progressive difficulty"
+      ],
+      "metrics": {
+        "users": 25000,
+        "gamesPlayed": 1200000,
+        "avgSession": "12m",
+        "returnRate": 58
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/game-collection",
+        "stars": 428,
+        "forks": 156,
+        "issues": 22,
+        "pullRequests": 18,
+        "lastCommit": "2026-08-14",
+        "language": "JavaScript",
+        "size": "18.3 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/game-collection",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763532/MKA_11_jbijtv.webp",
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763532/MKA_13_i4bao3.webp"
+        ]
+      },
+      "timeline": {
+        "started": "2025-10-01",
+        "mvp": "2025-11-01",
+        "launched": "2025-12-15",
+        "iterations": 20
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "pos-ultimate-pro-max",
+      "title": "POS Ultimate Pro Max",
+      "slug": "pos-ultimate-pro-max",
+      "description": "Enterprise-grade Point of Sale system with inventory management, analytics, and multi-location support.",
+      "category": "POS",
+      "tags": ["POS", "Inventory", "Analytics", "Enterprise", "Multi-location"],
+      "techStack": {
+        "frontend": ["React", "Redux", "Material-UI", "Chart.js"],
+        "backend": ["Node.js", "PostgreSQL", "Redis"],
+        "devops": ["Docker", "Kubernetes", "AWS"],
+        "apis": ["Stripe", "Twilio", "SendGrid"]
+      },
+      "features": [
+        "Multi-location inventory sync",
+        "Real-time sales analytics",
+        "Employee management",
+        "Customer loyalty program",
+        "Barcode scanning",
+        "Receipt printing",
+        "Payment gateway integration",
+        "Offline mode",
+        "Cloud backup",
+        "Custom reporting"
+      ],
+      "metrics": {
+        "businesses": 450,
+        "transactions": 2500000,
+        "revenue": "\$85,000 MRR",
+        "uptime": 99.97
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/POS-Ultimate-Pro-Max",
+        "stars": 567,
+        "forks": 234,
+        "issues": 45,
+        "pullRequests": 67,
+        "lastCommit": "2026-08-17",
+        "language": "TypeScript",
+        "size": "125.6 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/POS-Ultimate-Pro-Max",
+        "video": "https://res.cloudinary.com/dye5qpwii/video/upload/v1779052732/Javier_Pardina_2_l1mtud.mp4",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795847/copilot_image_1778795115579_acfm5j.png",
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795853/copilot_image_1778794781671_kytvkc.png"
+        ]
+      },
+      "timeline": {
+        "started": "2025-06-01",
+        "mvp": "2025-08-15",
+        "launched": "2025-11-01",
+        "iterations": 45
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "job-portal-app",
+      "title": "Job Portal App",
+      "slug": "job-portal-app",
+      "description": "Full-stack job board with AI-powered job matching, resume builder, and interview preparation.",
+      "category": "Web",
+      "tags": ["Job Board", "AI Matching", "Resume Builder", "Full-stack"],
+      "techStack": {
+        "frontend": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+        "backend": ["Node.js", "PostgreSQL", "Elasticsearch"],
+        "devops": ["Vercel", "Supabase"],
+        "apis": ["OpenAI", "Indeed API", "LinkedIn API"]
+      },
+      "features": [
+        "AI-powered job matching",
+        "Resume builder with templates",
+        "Interview preparation tools",
+        "Salary insights",
+        "Company reviews",
+        "Application tracking",
+        "Job alerts",
+        "Profile visibility settings"
+      ],
+      "metrics": {
+        "users": 35000,
+        "jobs": 12000,
+        "applications": 180000,
+        "hires": 4500
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/Job-Portal-App",
+        "stars": 389,
+        "forks": 123,
+        "issues": 28,
+        "pullRequests": 34,
+        "lastCommit": "2026-08-16",
+        "language": "TypeScript",
+        "size": "67.4 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/Job-Portal-App",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795829/copilot_image_1778795000722_okryxj.png"
+        ]
+      },
+      "timeline": {
+        "started": "2026-03-01",
+        "mvp": "2026-04-15",
+        "launched": "2026-06-01",
+        "iterations": 18
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "weather-app",
+      "title": "Weather App",
+      "slug": "weather-app",
+      "description": "Beautiful weather application with location-based forecasts, radar maps, and severe weather alerts.",
+      "category": "Utility",
+      "tags": ["Weather", "API", "Geolocation", "Maps"],
+      "techStack": {
+        "frontend": ["Vue 3", "Leaflet", "Chart.js"],
+        "backend": ["OpenWeatherMap API", "WeatherAPI"],
+        "apis": ["Geolocation API", "Notification API"]
+      },
+      "features": [
+        "7-day forecasts",
+        "Hourly updates",
+        "Radar maps",
+        "Severe weather alerts",
+        "Multiple locations",
+        "Dark/Light theme",
+        "Offline caching",
+        "Widget support"
+      ],
+      "metrics": {
+        "users": 18000,
+        "dailyActiveUsers": 9500,
+        "apiCalls": 2500000,
+        "rating": 4.7
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/Weather-app",
+        "stars": 276,
+        "forks": 98,
+        "issues": 14,
+        "pullRequests": 12,
+        "lastCommit": "2026-08-11",
+        "language": "JavaScript",
+        "size": "15.2 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/Weather-app",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795822/preview_dzhqvv.webp"
+        ]
+      },
+      "timeline": {
+        "started": "2025-12-01",
+        "mvp": "2025-12-20",
+        "launched": "2026-01-15",
+        "iterations": 10
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "daily-planner-app",
+      "title": "Daily Planner App",
+      "slug": "daily-planner-app",
+      "description": "Productivity app with task management, habit tracking, time blocking, and goal setting.",
+      "category": "Utility",
+      "tags": ["Productivity", "Task Management", "Habit Tracking", "Time Blocking"],
+      "techStack": {
+        "frontend": ["React", "Redux Toolkit", "Tailwind CSS", "DnD"],
+        "backend": ["Firebase", "Firestore"],
+        "apis": ["Calendar API", "Notification API"]
+      },
+      "features": [
+        "Task management with priorities",
+        "Habit tracking streaks",
+        "Time blocking calendar",
+        "Goal setting with milestones",
+        "Pomodoro timer",
+        "Daily/weekly reviews",
+        "Productivity analytics",
+        "Cross-device sync"
+      ],
+      "metrics": {
+        "users": 22000,
+        "dailyActiveUsers": 11000,
+        "tasksCompleted": 5600000,
+        "habitsTracked": 890000
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/Daily-planner-app",
+        "stars": 445,
+        "forks": 167,
+        "issues": 32,
+        "pullRequests": 28,
+        "lastCommit": "2026-08-13",
+        "language": "TypeScript",
+        "size": "42.8 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/Daily-planner-app",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795856/copilot_image_1778795000722_eo96gj.png"
+        ]
+      },
+      "timeline": {
+        "started": "2026-01-10",
+        "mvp": "2026-02-10",
+        "launched": "2026-03-20",
+        "iterations": 14
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "lens-lite",
+      "title": "Lens Lite",
+      "slug": "lens-lite",
+      "description": "Lightweight image editor with filters, adjustments, and AI-powered enhancements.",
+      "category": "Media",
+      "tags": ["Image Editing", "Canvas", "AI", "Filters"],
+      "techStack": {
+        "frontend": ["HTML5 Canvas", "WebGL", "TensorFlow.js"],
+        "backend": ["Cloudinary", "AWS Lambda"],
+        "apis": ["WebGL API", "File System Access API"]
+      },
+      "features": [
+        "50+ filters and effects",
+        "AI background removal",
+        "Color adjustments",
+        "Crop and resize",
+        "Batch processing",
+        "Export to multiple formats",
+        "Undo/redo history",
+        "Keyboard shortcuts"
+      ],
+      "metrics": {
+        "users": 28000,
+        "imagesEdited": 1800000,
+        "avgSession": "15m",
+        "exportRate": 78
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/Lens-lite",
+        "stars": 512,
+        "forks": 198,
+        "issues": 38,
+        "pullRequests": 42,
+        "lastCommit": "2026-08-15",
+        "language": "JavaScript",
+        "size": "56.3 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/Lens-lite",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778795859/copilot_image_1778794430377_n7xlmz.png"
+        ]
+      },
+      "timeline": {
+        "started": "2025-09-15",
+        "mvp": "2025-11-01",
+        "launched": "2025-12-20",
+        "iterations": 22
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "javascript-todo",
+      "title": "JavaScript Todo",
+      "slug": "javascript-todo",
+      "description": "Minimalist todo app built with vanilla JavaScript, demonstrating clean code principles.",
+      "category": "Utility",
+      "tags": ["Vanilla JS", "Todo", "LocalStorage", "Minimalist"],
+      "techStack": {
+        "frontend": ["HTML5", "CSS3", "Vanilla JavaScript"],
+        "storage": ["LocalStorage"]
+      },
+      "features": [
+        "Add/edit/delete tasks",
+        "Task priorities",
+        "Due dates",
+        "Categories/tags",
+        "Search and filter",
+        "Drag and drop",
+        "Dark mode",
+        "Data export/import"
+      ],
+      "metrics": {
+        "users": 45000,
+        "tasksCreated": 12000000,
+        "completionRate": 67
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/javascript-todo",
+        "stars": 678,
+        "forks": 289,
+        "issues": 45,
+        "pullRequests": 56,
+        "lastCommit": "2026-08-09",
+        "language": "JavaScript",
+        "size": "3.2 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/javascript-todo",
+        "screenshots": []
+      },
+      "timeline": {
+        "started": "2025-08-01",
+        "mvp": "2025-08-15",
+        "launched": "2025-09-01",
+        "iterations": 25
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "thailand-travel",
+      "title": "Thailand Travel",
+      "slug": "thailand-travel",
+      "description": "Travel guide app for Thailand with destinations, itineraries, bookings, and local insights.",
+      "category": "Travel",
+      "tags": ["Travel", "Guide", "Booking", "Maps"],
+      "techStack": {
+        "frontend": ["Next.js", "Tailwind CSS", "Mapbox"],
+        "backend": ["Strapi CMS", "PostgreSQL"],
+        "apis": ["Google Maps", "Booking.com API", "TripAdvisor API"]
+      },
+      "features": [
+        "Destination guides",
+        "Custom itineraries",
+        "Hotel/flight booking",
+        "Interactive maps",
+        "Local recommendations",
+        "Budget calculator",
+        "Packing checklist",
+        "Offline mode"
+      ],
+      "metrics": {
+        "users": 32000,
+        "bookings": 8500,
+        "revenue": "\$45,000",
+        "avgSession": "18m"
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/thailand-travel",
+        "stars": 356,
+        "forks": 134,
+        "issues": 26,
+        "pullRequests": 31,
+        "lastCommit": "2026-08-14",
+        "language": "TypeScript",
+        "size": "78.9 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/thailand-travel",
+        "screenshots": [
+          "https://res.cloudinary.com/dye5qpwii/image/upload/v1778763536/preview_ls5ptn.webp"
+        ]
+      },
+      "timeline": {
+        "started": "2026-02-15",
+        "mvp": "2026-04-01",
+        "launched": "2026-05-15",
+        "iterations": 16
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "casino-app",
+      "title": "Casino App",
+      "slug": "casino-app",
+      "description": "Social casino games with virtual currency, tournaments, and leaderboards.",
+      "category": "Game",
+      "tags": ["Casino", "Multiplayer", "Tournaments", "Virtual Currency"],
+      "techStack": {
+        "frontend": ["React", "Redux", "Socket.io", "Canvas"],
+        "backend": ["Node.js", "MongoDB", "Redis"],
+        "apis": ["Socket.io", "Payment Gateway"]
+      },
+      "features": [
+        "Multiple casino games",
+        "Virtual currency system",
+        "Daily bonuses",
+        "Tournaments",
+        "Leaderboards",
+        "Social features",
+        "Achievements",
+        "In-app purchases"
+      ],
+      "metrics": {
+        "users": 125000,
+        "dailyActiveUsers": 45000,
+        "revenue": "\$125,000 MRR",
+        "retention30Day": 52
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/casino-app",
+        "stars": 789,
+        "forks": 345,
+        "issues": 67,
+        "pullRequests": 89,
+        "lastCommit": "2026-08-16",
+        "language": "JavaScript",
+        "size": "145.7 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/casino-app",
+        "screenshots": []
+      },
+      "timeline": {
+        "started": "2025-07-01",
+        "mvp": "2025-09-15",
+        "launched": "2025-11-20",
+        "iterations": 38
+      },
+      "status": "active",
+      "visibility": "public"
+    },
+    {
+      "id": "snake-game-app",
+      "title": "Snake Game App",
+      "slug": "snake-game-app",
+      "description": "Classic Snake game with modern graphics, power-ups, and competitive leaderboards.",
+      "category": "Game",
+      "tags": ["Snake", "Arcade", "Canvas", "Leaderboards"],
+      "techStack": {
+        "frontend": ["HTML5 Canvas", "JavaScript", "CSS3"],
+        "backend": ["Firebase"],
+        "apis": ["Gamepad API"]
+      },
+      "features": [
+        "Classic and modern modes",
+        "Power-ups and bonuses",
+        "Multiple skins",
+        "Global leaderboards",
+        "Achievements",
+        "Touch controls",
+        "Sound effects",
+        "Progressive difficulty"
+      ],
+      "metrics": {
+        "users": 85000,
+        "gamesPlayed": 5600000,
+        "highScores": 2300000,
+        "avgSession": "8m"
+      },
+      "repository": {
+        "url": "https://github.com/moekyawaung-tech/Snake-Game-App",
+        "stars": 923,
+        "forks": 412,
+        "issues": 54,
+        "pullRequests": 67,
+        "lastCommit": "2026-08-12",
+        "language": "JavaScript",
+        "size": "12.4 MB"
+      },
+      "demo": {
+        "live": "https://moekyawaung-tech.github.io/Snake-Game-App",
+        "screenshots": []
+      },
+      "timeline": {
+        "started": "2025-09-01",
+        "mvp": "2025-09-20",
+        "launched": "2025-10-15",
+        "iterations": 18
+      },
+      "status": "active",
+      "visibility": "public"
+    }
+  ]
+}
