@@ -1,0 +1,195 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+.output/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+*.lcov
+.nyc_output
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+
+# Parcel cache
+.cache
+.parcel-cache
+
+# Rollup cache
+.rollup.cache
+
+# Vite cache
+.vite
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Temporary files
+tmp/
+temp/
+.cache/
+*.tmp
+*.temp
+
+# Testing
+.test-results/
+playwright-report/
+test-results/
+
+# Reports
+reports/
+*.html
+*.xml
+*.json
+
+# Local Netlify folder
+.netlify
+
+# Optional style cache
+.stylelintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel-plugin-empty
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Your framework uses Vite, may also need to ignore
+**/vite.config.ts.timestamp-*
+
+# Optional: Chokidar
+chokidar
+
+# Optional: npm lockfile
+# package-lock.json
+
+# Optional: yarn lockfile
+# yarn.lock
+
+# Optional: pnpm lockfile
+# pnpm-lock.yaml
+
+# Optional: bun lockfile
+# bun.lockb
+
+# Storybook build outputs
+storybook-static/
+
+# MDX build outputs
+.mdx/
+
+# SvelteKit
+.svelte-kit/
+
+# Astro
+.astro/
+
+# Nuxt
+.nitro/
+.nitro.dev/
+
+# Serverless directories
+.serverless/
+
+# Optional: AWS Lambda
+.aws-sam/
+
+# Optional: Google Cloud Functions
+.gcf/
+
+# Optional: Vercel
+.vercel
+
+# Optional: Netlify
+.netlify
+
+# Optional: Cloudflare
+.wrangler/
+
+# Optional: Render
+.render/
+
+# Optional: Railway
+.railway/
+
+# Optional: Heroku
+.procfile
+
+# Optional: Dokku
+.dokku/
+
+# Optional: CapRover
+.cr/
+
+# Optional: Coolify
+.coolify/
+
+# Optional: Local development
+local/
+dev/
