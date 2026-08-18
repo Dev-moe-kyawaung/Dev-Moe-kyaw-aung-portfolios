@@ -1,0 +1,66 @@
+/* assets/css/animations.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn .7s ease both;
+}
+
+.mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.navbar-toggle.active .hamburger:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active .hamburger:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
