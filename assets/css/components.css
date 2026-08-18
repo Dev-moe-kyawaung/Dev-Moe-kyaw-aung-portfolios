@@ -1,0 +1,122 @@
+/* assets/css/components.css */
+
+.about-grid,
+.contact-grid,
+.experience-timeline,
+.startups-grid,
+.projects-grid,
+.certificates-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-grid,
+.contact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects-grid,
+.startups-grid,
+.certificates-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card,
+.startup-card,
+.certificate-card,
+.info-card,
+.timeline-content,
+.skill-category {
+  background: var(--color-bg-card, #1e1e3a);
+  border: 1px solid var(--color-border, rgba(255,255,255,.1));
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.project-card:hover,
+.startup-card:hover,
+.certificate-card:hover,
+.info-card:hover {
+  transform: translateY(-6px);
+  border-color: #6366f1;
+}
+
+.project-image img,
+.startup-logo img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-content,
+.startup-body,
+.cert-body {
+  margin-top: 1rem;
+}
+
+.project-tags,
+.project-stats,
+.startup-tech,
+.cert-skills,
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.tag,
+.tech-tag,
+.skill-tag {
+  display: inline-block;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: rgba(99,102,241,.15);
+  color: #a5b4fc;
+  font-size: .8rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: .4rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: .85rem 1rem;
+  color: inherit;
+  background: var(--color-bg-surface, #1a1a2e);
+  border: 1px solid var(--color-border, rgba(255,255,255,.1));
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #6366f1;
+}
+
+@media (max-width: 900px) {
+  .projects-grid,
+  .startups-grid,
+  .certificates-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .about-grid,
+  .contact-grid,
+  .projects-grid,
+  .startups-grid,
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}
