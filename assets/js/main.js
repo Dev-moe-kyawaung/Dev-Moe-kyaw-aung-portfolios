@@ -11,31 +11,26 @@
 // CONFIGURATION & CONSTANTS
 // ============================================
 const CONFIG = {
-  // API Endpoints
   API_BASE: 'https://api.github.com',
   GITHUB_USER: 'Dev-moe-kyawaung',
   
-  // Animation Settings
   ANIMATION: {
     DURATION: 300,
     EASING: 'cubic-bezier(0.4, 0, 0.2, 1)',
     SCROLL_OFFSET: 100,
   },
   
-  // Performance
   PERFORMANCE: {
     LAZY_LOAD_THRESHOLD: 300,
     DEBOUNCE_DELAY: 300,
     THROTTLE_DELAY: 100,
   },
   
-  // Theme
   THEME: {
     DEFAULT: 'dark',
     STORAGE_KEY: 'portfolio-theme',
   },
   
-  // Particles
   PARTICLES: {
     NUMBER: 80,
     COLOR: '#6366f1',
@@ -48,9 +43,6 @@ const CONFIG = {
 // UTILITY FUNCTIONS
 // ============================================
 
-/**
- * Debounce function
- */
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
@@ -63,9 +55,6 @@ function debounce(func, wait) {
   };
 }
 
-/**
- * Throttle function
- */
 function throttle(func, limit) {
   let inThrottle;
   return function(...args) {
@@ -77,9 +66,6 @@ function throttle(func, limit) {
   };
 }
 
-/**
- * Smooth scroll to element
- */
 function smoothScrollTo(element, offset = 0) {
   const targetPosition = element.getBoundingClientRect().top + window.pageYOffset - offset;
   
@@ -89,16 +75,10 @@ function smoothScrollTo(element, offset = 0) {
   });
 }
 
-/**
- * Format number with commas
- */
 function formatNumber(num) {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
-/**
- * Format currency
- */
 function formatCurrency(amount, currency = 'USD') {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -106,9 +86,6 @@ function formatCurrency(amount, currency = 'USD') {
   }).format(amount);
 }
 
-/**
- * Format date
- */
 function formatDate(dateString) {
   return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -117,9 +94,6 @@ function formatDate(dateString) {
   });
 }
 
-/**
- * Check if element is in viewport
- */
 function isInViewport(element, offset = 0) {
   const rect = element.getBoundingClientRect();
   return (
@@ -130,9 +104,6 @@ function isInViewport(element, offset = 0) {
   );
 }
 
-/**
- * Get scroll percentage
- */
 function getScrollPercentage() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -143,30 +114,17 @@ function getScrollPercentage() {
 // DOM ELEMENTS
 // ============================================
 const DOM = {
-  // Preloader
   preloader: document.getElementById('preloader'),
-  
-  // Navigation
   navbar: document.getElementById('navbar'),
   navbarToggle: document.querySelector('.navbar-toggle'),
   mobileMenu: document.querySelector('.mobile-menu'),
   mobileMenuClose: document.querySelector('.mobile-menu-close'),
   navbarLinks: document.querySelectorAll('.navbar-link'),
   mobileMenuLinks: document.querySelectorAll('.mobile-menu-link'),
-  
-  // Theme
   themeToggle: document.getElementById('theme-toggle'),
-  
-  // Back to top
   backToTop: document.getElementById('back-to-top'),
-  
-  // Sections
   sections: document.querySelectorAll('.section'),
-  
-  // Forms
   contactForm: document.getElementById('contact-form'),
-  
-  // Charts
   revenueChart: document.getElementById('revenueChart'),
   userGrowthChart: document.getElementById('userGrowthChart'),
   productChart: document.getElementById('productChart'),
@@ -176,18 +134,19 @@ const DOM = {
 // INITIALIZATION
 // ============================================
 
-/**
- * Initialize all modules
- */
 async function init() {
   try {
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100,
-    });
+    console.log('🚀 Initializing portfolio...');
+    
+    // Initialize AOS
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100,
+      });
+    }
     
     // Initialize Particles
     initParticles();
@@ -216,7 +175,7 @@ async function init() {
     // Initialize Typing Animation
     initTypingAnimation();
     
-    // Initialize Filter/Sort
+    // Initialize Filters
     initFilters();
     
     // Initialize Scroll Effects
@@ -235,14 +194,13 @@ async function init() {
 // PRELOADER
 // ============================================
 
-/**
- * Hide preloader when page is loaded
- */
 function hidePreloader() {
   window.addEventListener('load', () => {
     setTimeout(() => {
-      DOM.preloader?.classList.add('hidden');
-      document.body.style.overflow = 'auto';
+      if (DOM.preloader) {
+        DOM.preloader.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
     }, 1000);
   });
 }
@@ -251,11 +209,11 @@ function hidePreloader() {
 // PARTICLES
 // ============================================
 
-/**
- * Initialize particles.js background
- */
 function initParticles() {
-  if (typeof particlesJS === 'undefined') return;
+  if (typeof particlesJS === 'undefined') {
+    console.log('⚠️ particlesJS not loaded');
+    return;
+  }
   
   particlesJS('particles-js', {
     particles: {
@@ -335,18 +293,12 @@ function initParticles() {
 // THEME MANAGEMENT
 // ============================================
 
-/**
- * Initialize theme from localStorage
- */
 function initTheme() {
   const savedTheme = localStorage.getItem(CONFIG.THEME.STORAGE_KEY) || CONFIG.THEME.DEFAULT;
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
 }
 
-/**
- * Toggle theme
- */
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -354,17 +306,8 @@ function toggleTheme() {
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem(CONFIG.THEME.STORAGE_KEY, newTheme);
   updateThemeIcon(newTheme);
-  
-  // Animate theme toggle
-  DOM.themeToggle?.classList.add('rotating');
-  setTimeout(() => {
-    DOM.themeToggle?.classList.remove('rotating');
-  }, 300);
 }
 
-/**
- * Update theme toggle icon
- */
 function updateThemeIcon(theme) {
   if (!DOM.themeToggle) return;
   
@@ -388,25 +331,23 @@ function updateThemeIcon(theme) {
 // NAVIGATION
 // ============================================
 
-/**
- * Initialize navigation functionality
- */
 function initNavigation() {
-  // Navbar scroll effect
   window.addEventListener('scroll', throttle(handleNavbarScroll, 100));
   
-  // Mobile menu toggle
-  DOM.navbarToggle?.addEventListener('click', toggleMobileMenu);
-  DOM.mobileMenuClose?.addEventListener('click', closeMobileMenu);
+  if (DOM.navbarToggle) {
+    DOM.navbarToggle.addEventListener('click', toggleMobileMenu);
+  }
   
-  // Navbar links
+  if (DOM.mobileMenuClose) {
+    DOM.mobileMenuClose.addEventListener('click', closeMobileMenu);
+  }
+  
   DOM.navbarLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       handleNavClick(e, link);
     });
   });
   
-  // Mobile menu links
   DOM.mobileMenuLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       handleNavClick(e, link);
@@ -414,45 +355,44 @@ function initNavigation() {
     });
   });
   
-  // Active link highlighting
   updateActiveNavLink();
   window.addEventListener('scroll', throttle(updateActiveNavLink, 100));
 }
 
-/**
- * Handle navbar scroll effect
- */
 function handleNavbarScroll() {
   const scrollTop = window.pageYOffset;
   
   if (scrollTop > 100) {
-    DOM.navbar?.classList.add('scrolled');
+    if (DOM.navbar) {
+      DOM.navbar.classList.add('scrolled');
+    }
   } else {
-    DOM.navbar?.classList.remove('scrolled');
+    if (DOM.navbar) {
+      DOM.navbar.classList.remove('scrolled');
+    }
   }
 }
 
-/**
- * Toggle mobile menu
- */
 function toggleMobileMenu() {
-  DOM.mobileMenu?.classList.toggle('active');
-  DOM.navbarToggle?.classList.toggle('active');
+  if (DOM.mobileMenu) {
+    DOM.mobileMenu.classList.toggle('active');
+  }
+  if (DOM.navbarToggle) {
+    DOM.navbarToggle.classList.toggle('active');
+  }
   document.body.style.overflow = DOM.mobileMenu?.classList.contains('active') ? 'hidden' : 'auto';
 }
 
-/**
- * Close mobile menu
- */
 function closeMobileMenu() {
-  DOM.mobileMenu?.classList.remove('active');
-  DOM.navbarToggle?.classList.remove('active');
+  if (DOM.mobileMenu) {
+    DOM.mobileMenu.classList.remove('active');
+  }
+  if (DOM.navbarToggle) {
+    DOM.navbarToggle.classList.remove('active');
+  }
   document.body.style.overflow = 'auto';
 }
 
-/**
- * Handle navigation click
- */
 function handleNavClick(e, link) {
   e.preventDefault();
   
@@ -460,13 +400,11 @@ function handleNavClick(e, link) {
   const targetSection = document.querySelector(targetId);
   
   if (targetSection) {
-    smoothScrollTo(targetSection, DOM.navbar?.offsetHeight || 80);
+    const navbarHeight = DOM.navbar?.offsetHeight || 80;
+    smoothScrollTo(targetSection, navbarHeight);
   }
 }
 
-/**
- * Update active navigation link
- */
 function updateActiveNavLink() {
   const scrollPosition = window.pageYOffset + 200;
   
@@ -478,14 +416,14 @@ function updateActiveNavLink() {
     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
       DOM.navbarLinks.forEach((link) => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#\${sectionId}`) {
+        if (link.getAttribute('href') === '#' + sectionId) {
           link.classList.add('active');
         }
       });
       
       DOM.mobileMenuLinks.forEach((link) => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#\${sectionId}`) {
+        if (link.getAttribute('href') === '#' + sectionId) {
           link.classList.add('active');
         }
       });
@@ -497,14 +435,14 @@ function updateActiveNavLink() {
 // ANIMATIONS
 // ============================================
 
-/**
- * Initialize GSAP animations
- */
 function initAnimations() {
-  // Register ScrollTrigger
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    console.log('⚠️ GSAP not loaded');
+    return;
+  }
+  
   gsap.registerPlugin(ScrollTrigger);
   
-  // Hero animations
   gsap.from('.hero-profile', {
     duration: 1,
     y: 50,
@@ -528,8 +466,8 @@ function initAnimations() {
     ease: 'power3.out',
   });
   
-  // Section headers
-  gsap.utils.toArray('.section-header').forEach((header) => {
+  const sectionHeaders = document.querySelectorAll('.section-header');
+  sectionHeaders.forEach((header) => {
     gsap.from(header, {
       scrollTrigger: {
         trigger: header,
@@ -544,9 +482,10 @@ function initAnimations() {
   });
 }
 
-/**
- * Initialize typing animation
- */
+// ============================================
+// TYPING ANIMATION
+// ============================================
+
 function initTypingAnimation() {
   const typingElement = document.querySelector('.typing-text');
   
@@ -568,9 +507,6 @@ function initTypingAnimation() {
 // COUNTER ANIMATIONS
 // ============================================
 
-/**
- * Initialize counter animations
- */
 function initCounters() {
   const counters = document.querySelectorAll('[data-count]');
   
@@ -585,17 +521,16 @@ function initCounters() {
     const updateCounter = () => {
       current += step;
       if (current < target) {
-        counter.textContent = `\${prefix}\${formatNumber(Math.floor(current))}\${suffix}`;
+        counter.textContent = prefix + formatNumber(Math.floor(current)) + suffix;
         requestAnimationFrame(updateCounter);
       } else {
-        counter.textContent = `\${prefix}\${formatNumber(target)}\${suffix}`;
+        counter.textContent = prefix + formatNumber(target) + suffix;
       }
     };
     
     updateCounter();
   };
   
-  // Use Intersection Observer for performance
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -615,13 +550,12 @@ function initCounters() {
 // CHARTS
 // ============================================
 
-/**
- * Initialize Chart.js charts
- */
 function initCharts() {
-  if (typeof Chart === 'undefined') return;
+  if (typeof Chart === 'undefined') {
+    console.log('⚠️ Chart.js not loaded');
+    return;
+  }
   
-  // Revenue Chart
   if (DOM.revenueChart) {
     new Chart(DOM.revenueChart, {
       type: 'line',
@@ -662,7 +596,6 @@ function initCharts() {
     });
   }
   
-  // User Growth Chart
   if (DOM.userGrowthChart) {
     new Chart(DOM.userGrowthChart, {
       type: 'bar',
@@ -702,7 +635,6 @@ function initCharts() {
     });
   }
   
-  // Product Chart
   if (DOM.productChart) {
     new Chart(DOM.productChart, {
       type: 'bar',
@@ -754,17 +686,12 @@ function initCharts() {
 // FORMS
 // ============================================
 
-/**
- * Initialize form handling
- */
 function initForms() {
-  // Contact form
-  DOM.contactForm?.addEventListener('submit', handleContactSubmit);
+  if (DOM.contactForm) {
+    DOM.contactForm.addEventListener('submit', handleContactSubmit);
+  }
 }
 
-/**
- * Handle contact form submission
- */
 async function handleContactSubmit(e) {
   e.preventDefault();
   
@@ -772,37 +699,27 @@ async function handleContactSubmit(e) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
   
-  // Validate form
   if (!validateForm(data)) {
     return;
   }
   
-  // Show loading state
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalText = submitBtn.innerHTML;
   submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   submitBtn.disabled = true;
   
   try {
-    // Simulate API call (replace with actual endpoint)
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    
-    // Show success message
     showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
     form.reset();
   } catch (error) {
-    // Show error message
     showNotification('Failed to send message. Please try again.', 'error');
   } finally {
-    // Reset button
     submitBtn.innerHTML = originalText;
     submitBtn.disabled = false;
   }
 }
 
-/**
- * Validate form data
- */
 function validateForm(data) {
   const { name, email, message } = data;
   
@@ -824,27 +741,16 @@ function validateForm(data) {
   return true;
 }
 
-/**
- * Validate email format
- */
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+\$/;
   return emailRegex.test(email);
 }
 
-/**
- * Show notification
- */
 function showNotification(message, type = 'info') {
-  // Create notification element
   const notification = document.createElement('div');
-  notification.className = `notification notification-\${type}`;
-  notification.innerHTML = `
-    <i class="fas fa-\${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
-    <span>\${message}</span>
-  `;
+  notification.className = 'notification notification-' + type;
+  notification.innerHTML = '<i class="fas fa-' + (type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle') + '"></i><span>' + message + '</span>';
   
-  // Add styles
   Object.assign(notification.style, {
     position: 'fixed',
     bottom: '2rem',
@@ -861,10 +767,8 @@ function showNotification(message, type = 'info') {
     animation: 'slideIn 0.3s ease-out',
   });
   
-  // Add to DOM
   document.body.appendChild(notification);
   
-  // Remove after 5 seconds
   setTimeout(() => {
     notification.style.animation = 'slideOut 0.3s ease-out';
     setTimeout(() => notification.remove(), 300);
@@ -875,9 +779,6 @@ function showNotification(message, type = 'info') {
 // LAZY LOADING
 // ============================================
 
-/**
- * Initialize lazy loading for images
- */
 function initLazyLoading() {
   const images = document.querySelectorAll('img[data-src]');
   
@@ -902,32 +803,28 @@ function initLazyLoading() {
 // FILTERS & SORT
 // ============================================
 
-/**
- * Initialize filter functionality
- */
 function initFilters() {
-  // Projects filter
   const projectFilters = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
   
   projectFilters.forEach((btn) => {
     btn.addEventListener('click', () => {
-      // Update active state
       projectFilters.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
       
-      // Filter cards
       const filter = btn.dataset.filter;
       
       projectCards.forEach((card) => {
         if (filter === 'all' || card.dataset.category === filter) {
           card.style.display = 'block';
-          gsap.from(card, {
-            duration: 0.5,
-            scale: 0.9,
-            opacity: 0,
-            ease: 'back.out(1.7)',
-          });
+          if (typeof gsap !== 'undefined') {
+            gsap.from(card, {
+              duration: 0.5,
+              scale: 0.9,
+              opacity: 0,
+              ease: 'back.out(1.7)',
+            });
+          }
         } else {
           card.style.display = 'none';
         }
@@ -935,17 +832,14 @@ function initFilters() {
     });
   });
   
-  // Certificates tabs
   const certTabs = document.querySelectorAll('.tab-btn');
   const certCards = document.querySelectorAll('.certificate-card');
   
   certTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
-      // Update active state
       certTabs.forEach((t) => t.classList.remove('active'));
       tab.classList.add('active');
       
-      // Filter cards
       const category = tab.dataset.category;
       
       certCards.forEach((card) => {
@@ -963,36 +857,35 @@ function initFilters() {
 // SCROLL EFFECTS
 // ============================================
 
-/**
- * Initialize scroll-based effects
- */
 function initScrollEffects() {
-  // Back to top button
   window.addEventListener('scroll', throttle(handleBackToTop, 100));
-  DOM.backToTop?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
   
-  // Progress bar (optional)
+  if (DOM.backToTop) {
+    DOM.backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+  
   const progressBar = document.querySelector('.scroll-progress');
   if (progressBar) {
     window.addEventListener('scroll', () => {
       const percentage = getScrollPercentage();
-      progressBar.style.width = `\${percentage}%`;
+      progressBar.style.width = percentage + '%';
     });
   }
 }
 
-/**
- * Handle back to top button visibility
- */
 function handleBackToTop() {
   const scrollTop = window.pageYOffset;
   
   if (scrollTop > 500) {
-    DOM.backToTop?.classList.add('visible');
+    if (DOM.backToTop) {
+      DOM.backToTop.classList.add('visible');
+    }
   } else {
-    DOM.backToTop?.classList.remove('visible');
+    if (DOM.backToTop) {
+      DOM.backToTop.classList.remove('visible');
+    }
   }
 }
 
@@ -1000,21 +893,16 @@ function handleBackToTop() {
 // EVENT LISTENERS
 // ============================================
 
-// Theme toggle
-DOM.themeToggle?.addEventListener('click', toggleTheme);
+if (DOM.themeToggle) {
+  DOM.themeToggle.addEventListener('click', toggleTheme);
+}
 
-// Resize handler
 window.addEventListener('resize', debounce(() => {
-  // Reinitialize particles on resize
   initParticles();
-  
-  // Update charts
   initCharts();
 }, 300));
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
-  // ESC to close mobile menu
   if (e.key === 'Escape') {
     closeMobileMenu();
   }
@@ -1024,20 +912,8 @@ document.addEventListener('keydown', (e) => {
 // START APPLICATION
 // ============================================
 
-// Initialize when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {
   init();
 }
-
-// Export for module usage
-export {
-  CONFIG,
-  debounce,
-  throttle,
-  smoothScrollTo,
-  formatNumber,
-  formatCurrency,
-  formatDate,
-};
